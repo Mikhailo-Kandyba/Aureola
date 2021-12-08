@@ -1,2 +1,73 @@
 @import "variables";
 @import "mixin";
+
+.btn-secondary {
+  font-family: $base-font-default;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $black;
+  background-color: $transparent;
+  border: none;
+
+  &:hover {
+    color: $black;
+    background-color: $transparent;
+    border: none;
+  }
+
+  &:focus,
+  &:active {
+    color: $black;
+    background-color: $transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  &:after {
+    display: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+    background-image: url("../images/arrow-down.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.btn-icon {
+  margin: 0 5px;
+  padding: 3px;
+  background: $transparent;
+}
+
+.btn-link {
+  display: inline-block;
+  position: relative;
+  font-size: $font-size-base + 3;
+  line-height: $line-height-base - 5;
+  padding: 20px 80px 20px 0;
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    color: $emperor;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 40px;
+    height: 9px;
+    transform: translate(0, -50%);
+    background-image: url("../images/pointer-btn.svg");
+    background-repeat: no-repeat;
+  }
+}
