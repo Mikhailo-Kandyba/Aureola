@@ -49,4 +49,8 @@
 
 .padding-left-73 {
   padding-left: 73px;
+
+  @include breakpoint($desktop) {
+    padding-left: 15px;
+  }
 }

@@ -134,7 +134,7 @@ h6 {
 .languages {
   font-size: 19px;
   line-height: 24px;
-  font-weight: 300;
+  font-weight: 500;
   border: none;
   background: transparent;
   -webkit-appearance: none;
@@ -189,7 +189,8 @@ h6 {
 
 .btn-list {
   flex-wrap: wrap;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  min-width: 155px; }
   .btn-list li {
     margin-left: 8px; }
 
@@ -356,10 +357,16 @@ h6 {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 -62px; }
+  @media only screen and (max-width: 1170px) {
+    .categories-list {
+      margin: 0 -12px; } }
   .categories-list li {
     width: 33.3%;
     padding: 0 62px;
     margin-bottom: 20px; }
+    @media only screen and (max-width: 1170px) {
+      .categories-list li {
+        padding: 0 12px; } }
     .categories-list li .img-area {
       display: flex;
       overflow: hidden;
@@ -404,12 +411,18 @@ h6 {
     border-radius: 5px;
     background: #fff;
     margin-bottom: 32px; }
+    @media only screen and (max-width: 1170px) {
+      .card-product li {
+        max-width: 330px; } }
   .card-product .img-area {
     margin-bottom: 10px; }
     .card-product .img-area img {
       display: block; }
   .card-product .description {
     padding: 0 25px 8px; }
+    @media only screen and (max-width: 1170px) {
+      .card-product .description {
+        padding: 0 2px 8px; } }
     .card-product .description .vendor-code {
       color: #565353;
       margin-bottom: 10px; }
@@ -645,3 +658,6 @@ h6 {
 
 .padding-left-73 {
   padding-left: 73px; }
+  @media only screen and (max-width: 1170px) {
+    .padding-left-73 {
+      padding-left: 15px; } }
