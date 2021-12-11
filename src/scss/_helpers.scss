@@ -5,3 +5,48 @@
   position: relative;
   z-index: 20;
 }
+
+.z-index-50 {
+  position: relative;
+  z-index: 50;
+}
+
+.z-index-1 {
+  position: relative;
+  z-index: -1;
+}
+
+.decor-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: $font-Poiret-One;
+  font-size: $font-size-base + 127;
+  line-height: $line-height-base + 97;
+  color: $alabaster;
+  letter-spacing: 4px;
+}
+
+.text-porcelain {
+  color: $porcelain;
+}
+
+.text-gray-nickel {
+  color: $gray-nickel;
+}
+
+.icon-emperor {
+  &:hover {
+    i {
+      color: $black;
+    }
+  }
+
+  i {
+    color: $emperor;
+  }
+}
+
+.padding-left-73 {
+  padding-left: 73px;
+}

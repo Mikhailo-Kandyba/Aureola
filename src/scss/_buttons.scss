@@ -2,7 +2,6 @@
 @import "mixin";
 
 .btn-secondary {
-  font-family: $base-font-default;
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $black;
@@ -46,11 +45,36 @@
   background: $transparent;
 }
 
-.btn-link {
+.languages {
+  font-size: $font-size-base + 2;
+  line-height: $line-height-base - 4;
+  font-weight: 300;
+  border: none;
+  background: $transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  option {
+    background: $transparent;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.btn-general {
+  background: $transparent;
+}
+
+.btn-link,
+.btn-general {
   display: inline-block;
   position: relative;
   font-size: $font-size-base + 3;
-  line-height: $line-height-base - 5;
+  line-height: $line-height-base - 3;
   padding: 20px 80px 20px 0;
   text-decoration: none;
   color: $black;
@@ -69,5 +93,13 @@
     transform: translate(0, -50%);
     background-image: url("../images/pointer-btn.svg");
     background-repeat: no-repeat;
+  }
+}
+
+.btn-emperor {
+  color: $emperor;
+
+  &:hover {
+    color: $black;
   }
 }
