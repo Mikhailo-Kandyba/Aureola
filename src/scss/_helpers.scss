@@ -25,6 +25,11 @@
   line-height: $line-height-base + 97;
   color: $alabaster;
   letter-spacing: 4px;
+
+  @include breakpoint($tablet) {
+    letter-spacing: 0;
+    font-size: $font-size-base + 83;
+  }
 }
 
 .text-porcelain {

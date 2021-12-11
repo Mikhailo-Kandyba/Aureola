@@ -11,6 +11,11 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+
+  @include breakpoint($tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .btn-list {
@@ -46,7 +51,7 @@
     @include breakpoint($mobile) {
       display: block;
       padding: 80px 40px;
-      background: $black;
+      background: $white;
       min-height: 100vh;
       min-width: inherit;
     }
@@ -70,6 +75,10 @@
         }
       }
     }
+  }
+
+  .btn-list {
+    display: none !important;
   }
 }
 
@@ -141,6 +150,10 @@
 .logo {
   img {
     width: 197px;
+
+    @include breakpoint($tablet) {
+      width: 165px;
+    }
   }
 }
 

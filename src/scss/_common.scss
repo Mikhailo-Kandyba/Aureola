@@ -8,10 +8,18 @@
   background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
   margin-top: -125px;
   padding-top: 200px;
   margin-bottom: 75px;
+
+  @include breakpoint($tablet) {
+    margin-top: -240px;
+    padding-top: 210px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
 
   &:after {
     content: '';
@@ -26,6 +34,10 @@
 
 .banner-content {
   max-width: 705px;
+
+  @include breakpoint($tablet) {
+    max-width: 100%;
+  }
 
   p {
     margin-bottom: 20px;
@@ -50,6 +62,10 @@
   display: flex;
   justify-content: center;
   margin-top: 140px;
+
+  @include breakpoint($tablet) {
+    margin-top: 40px;
+  }
 
   .slick-active {
     button {
@@ -93,6 +109,10 @@
     margin: 0 -12px;
   }
 
+  @include breakpoint($tablet) {
+    margin: 0 -5px;
+  }
+
   li {
     width: 33.3%;
     padding: 0 62px;
@@ -102,12 +122,21 @@
       padding: 0 12px;
     }
 
+    @include breakpoint($tablet) {
+      padding: 0 5px;
+    }
+
     .img-area {
       display: flex;
       overflow: hidden;
       height: 480px;
       border-radius: 5px;
       margin-bottom: 30px;
+
+      @include breakpoint($tablet) {
+        height: 400px;
+        margin-bottom: 10px;
+      }
     }
 
     h3 {
@@ -116,6 +145,10 @@
       line-height: $line-height-base + 15;
       font-weight: 400;
       margin-bottom: 24px;
+
+      @include breakpoint($tablet) {
+        margin-bottom: 10px;
+      }
     }
 
     p {
@@ -161,6 +194,10 @@
     @include breakpoint($desktop) {
       max-width: 330px;
     }
+
+    @include breakpoint($tablet) {
+      max-width: 360px;
+    }
   }
 
   .img-area {
@@ -176,6 +213,10 @@
 
     @include breakpoint($desktop) {
       padding: 0 2px 8px;
+    }
+
+    @include breakpoint($tablet) {
+      padding: 0 10px 8px;
     }
 
     .vendor-code {
@@ -204,16 +245,28 @@
 .social-networks-wrap {
   margin-bottom: 53px;
 
+  @include breakpoint($tablet) {
+    margin-bottom: 20px;
+  }
+
   .title-block {
     margin-bottom: 20px;
   }
 
   .row {
     margin-bottom: 20px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 0;
+    }
   }
 
   .decor-text {
     max-width: 800px;
+
+    @include breakpoint($tablet) {
+      max-width: 540px;
+    }
   }
 
   .img-area {
@@ -289,6 +342,10 @@
 
 .seo-text-wrap {
   margin-bottom: 73px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .items-text {
@@ -320,6 +377,11 @@
   position: relative;
   margin-bottom: 72px;
 
+  @include breakpoint($tablet) {
+    min-height: 575px;
+    margin-bottom: 10px;
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -343,6 +405,10 @@
   max-width: 540px;
   width: 100%;
   margin-bottom: 20px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 0;
+  }
 
   .form-group {
     margin-bottom: 40px;
