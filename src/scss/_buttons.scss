@@ -7,11 +7,22 @@
   color: $black;
   background-color: $transparent;
   border: none;
+  position: relative;
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base + 3;
+    line-height: $line-height-base + 5;
+    color: $cotton-seed;
+  }
 
   &:hover {
     color: $black;
     background-color: $transparent;
     border: none;
+
+    @include breakpoint($mobile) {
+      color: $emperor;
+    }
   }
 
   &:focus,
@@ -43,6 +54,18 @@
   margin: 0 5px;
   padding: 3px;
   background: $transparent;
+
+  &:hover {
+    i {
+      color: $emperor;
+    }
+  }
+
+  i {
+    @include breakpoint($mobile) {
+      font-size: $font-size-base;
+    }
+  }
 }
 
 .languages {
@@ -55,6 +78,15 @@
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base - 4;
+  }
+
+  &:hover {
+    color: $emperor;
+  }
 
   option {
     background: $transparent;
@@ -79,6 +111,12 @@
   text-decoration: none;
   color: $black;
 
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 5;
+    line-height: $line-height-base - 13;
+    padding: 10px 50px 10px 0;
+  }
+
   &:hover {
     color: $emperor;
   }
@@ -93,6 +131,10 @@
     transform: translate(0, -50%);
     background-image: url("../images/pointer-btn.svg");
     background-repeat: no-repeat;
+
+    @include breakpoint($mobile) {
+      background-image: url("../images/pointer-btn-mobile.svg");
+    }
   }
 }
 
@@ -101,5 +143,37 @@
 
   &:hover {
     color: $black;
+  }
+}
+
+.btn-outline-secondary {
+  border: none;
+  border-bottom: 1px solid $emperor !important;
+  border-radius: 0;
+  padding: 0 5px;
+  max-height: 20px;
+
+  i {
+    color: $emperor;
+    font-size: 11px;
+  }
+
+  &:hover {
+    background: $emperor;
+    background-color: $emperor;
+
+    i {
+      color: $black;
+    }
+  }
+
+  &:active {
+    color: #fff;
+    background-color: $transparent;
+    border-color: $transparent;
+  }
+
+  &:focus {
+    box-shadow: none !important;
   }
 }

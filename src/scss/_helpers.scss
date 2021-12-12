@@ -30,6 +30,12 @@
     letter-spacing: 0;
     font-size: $font-size-base + 83;
   }
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base + 23;
+    line-height: $line-height-base + 49;
+    right: 13px;
+  }
 }
 
 .text-porcelain {
@@ -58,4 +64,14 @@
   @include breakpoint($desktop) {
     padding-left: 15px;
   }
+
+  @include breakpoint($mobile) {
+    padding: 0 19px;
+  }
 }
+
+.background {
+  background: black;
+}
+
+

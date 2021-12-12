@@ -21,6 +21,14 @@
     margin-bottom: 40px;
   }
 
+  @include breakpoint($mobile) {
+    margin-top: -100px;
+    padding-top: 90px;
+    min-height: 375px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -42,6 +50,14 @@
   p {
     margin-bottom: 20px;
     max-width: 462px;
+
+    @include breakpoint($mobile) {
+      font-weight: 300;
+      font-size: $font-size-base - 5;
+      line-height: $line-height-base - 8;
+      max-width: 195px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -51,6 +67,12 @@
   line-height: $line-height-base +38;
   font-weight: 400;
   margin-bottom: 50px;
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base + 13;
+    line-height: $line-height-base + 3;
+    margin-bottom: 10px;
+  }
 }
 
 .slick-next,
@@ -67,6 +89,10 @@
     margin-top: 40px;
   }
 
+  @include breakpoint($mobile) {
+    margin-top: 5px;
+  }
+
   .slick-active {
     button {
       background: $emperor;
@@ -77,11 +103,19 @@
     line-height: $line-height-base - 28;
     margin: 0 16px;
 
+    @include breakpoint($mobile) {
+      margin: 0 5px;
+    }
+
     button {
       font-size: 0;
       background: $white;
       border-radius: 50%;
       padding: 5px;
+
+      @include breakpoint($mobile) {
+        padding: 3px;
+      }
     }
   }
 }
@@ -93,10 +127,21 @@
   font-weight: 400;
   margin-bottom: 30px;
   letter-spacing: 1px;
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base + 3;
+    line-height: $line-height-base + 8;
+    letter-spacing: 0;
+    margin-bottom: 18px;
+  }
 }
 
 .categories {
   margin-bottom: 30px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 13px;
+  }
 }
 
 .categories-list {
@@ -113,6 +158,11 @@
     margin: 0 -5px;
   }
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   li {
     width: 33.3%;
     padding: 0 62px;
@@ -126,6 +176,11 @@
       padding: 0 5px;
     }
 
+    @include breakpoint($mobile) {
+      width: 100%;
+      padding: 0 30px;
+    }
+
     .img-area {
       display: flex;
       overflow: hidden;
@@ -136,6 +191,14 @@
       @include breakpoint($tablet) {
         height: 400px;
         margin-bottom: 10px;
+      }
+
+      @include breakpoint($mobile) {
+        height: 310px;
+      }
+
+      img {
+        object-fit: cover;
       }
     }
 
@@ -149,12 +212,22 @@
       @include breakpoint($tablet) {
         margin-bottom: 10px;
       }
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base + 3;
+        line-height: $line-height-base - 4;
+      }
     }
 
     p {
       font-size: $font-size-base;
       line-height: $line-height-base;
       color: $emperor;
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 5;
+        line-height: $line-height-base - 8;
+      }
     }
   }
 }
@@ -163,10 +236,16 @@
   background-image: url("../images/catalog-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   min-height: 1295px;
   position: relative;
   padding: 20px 0;
   margin-bottom: 30px;
+
+  @include breakpoint($mobile) {
+    min-height: 933px;
+    margin-bottom: 25px;
+  }
 
   &:after {
     content: '';
@@ -184,24 +263,46 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 -5px;
 
   li {
     max-width: 378px;
     border-radius: 5px;
     background: $white;
-    margin-bottom: 32px;
+    margin: 0 5px 32px;
 
     @include breakpoint($desktop) {
       max-width: 330px;
     }
 
     @include breakpoint($tablet) {
-      max-width: 360px;
+      max-width: 350px;
+    }
+
+    @include breakpoint($mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        display: none;
+      }
     }
   }
 
   .img-area {
     margin-bottom: 10px;
+
+    @include breakpoint($mobile) {
+      max-width: 163px;
+      margin-bottom: 3px;
+    }
 
     img {
       display: block;
@@ -222,6 +323,12 @@
     .vendor-code {
       color: $emperor;
       margin-bottom: 10px;
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 7;
+        line-height: $line-height-base - 6;
+        margin-bottom: 0;
+      }
     }
 
     h3 {
@@ -230,10 +337,21 @@
       line-height: $line-height-base + 15;
       margin-bottom: 13px;
       font-weight: 400;
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base + 3;
+        line-height: $line-height-base - 4;
+        margin-bottom: 10px;
+      }
     }
 
     p {
       color: $emperor;
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 5;
+        line-height: $line-height-base - 8;
+      }
     }
 
     .btn-link {
@@ -249,8 +367,16 @@
     margin-bottom: 20px;
   }
 
+  @include breakpoint($mobile) {
+    margin-bottom: 30px;
+  }
+
   .title-block {
     margin-bottom: 20px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 12px;
+    }
   }
 
   .row {
@@ -259,6 +385,16 @@
     @include breakpoint($tablet) {
       margin-bottom: 0;
     }
+
+    @include breakpoint($mobile) {
+      flex-direction: column;
+    }
+  }
+
+  .row > .col {
+    .row {
+      flex-direction: row;
+    }
   }
 
   .decor-text {
@@ -266,6 +402,10 @@
 
     @include breakpoint($tablet) {
       max-width: 540px;
+    }
+
+    @include breakpoint($mobile) {
+      max-width: 215px;
     }
   }
 
@@ -289,6 +429,12 @@
   margin-bottom: 30px;
   position: relative;
 
+  @include breakpoint($mobile) {
+    padding: 15px 0;
+    min-height: 240px;
+    margin-bottom: 35px;
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -306,6 +452,10 @@
   border: none;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 11px;
+  }
 }
 
 .accordion-button{
@@ -313,6 +463,12 @@
   line-height: $line-height-base;
   padding: 30px 42px;
   border-radius: 5px;
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 5;
+    line-height: $line-height-base - 8;
+    padding: 8px 5px;
+  }
 
   &:hover {
     background: $porcelain;
@@ -340,6 +496,11 @@
   }
 }
 
+.accordion-body {
+  font-size: $font-size-base - 5;
+  line-height: $line-height-base - 8;
+}
+
 .seo-text-wrap {
   margin-bottom: 73px;
 
@@ -354,6 +515,12 @@
   height: 172px;
   line-height: $line-height-base + 8px;
   margin-bottom: 26px;
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 5;
+    line-height: $line-height-base - 2;
+    height: 308px;
+  }
 
   &:after {
     content: "";
@@ -382,6 +549,12 @@
     margin-bottom: 10px;
   }
 
+  @include breakpoint($mobile) {
+    padding: 20px 0;
+    min-height: 280px;
+    margin-bottom: 35px;
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -399,6 +572,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .title-block {
+    @include breakpoint($mobile) {
+      margin-bottom: 4px;
+    }
+  }
 }
 
 .user-form {
@@ -412,6 +591,10 @@
 
   .form-group {
     margin-bottom: 40px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 20px;
+    }
   }
 
   input {
@@ -424,10 +607,21 @@
     padding: 31px 30px;
     border: 1px solid $emperor;
 
+    @include breakpoint($mobile) {
+      height: 35px;
+      padding: 5px 15px;
+    }
+
     &::placeholder {
       font-size: $font-size-base;
       line-height: $line-height-base;
       color: $dove-gray;
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 5;
+        line-height: $line-height-base - 8;
+        color: $emperor;
+      }
     }
   }
 }

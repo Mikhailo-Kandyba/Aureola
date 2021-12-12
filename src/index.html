@@ -16,10 +16,16 @@
         <div id="wrapper">
             <header class="header z-index-50">
                 <div class="container-xxl padding-left-73">
-                    <div class="header-content">
+                    <div class="header-content position-relative">
                         <a class="logo" href="index.html">
                             <img src="./images/logo.svg" width="197" height="63" alt="logo">
                         </a>
+                        <div class="input-group">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        </div>
                         <div class="menu-navigation-wrap">
                             <ul class="menu-navigation">
                                 <li>
@@ -52,28 +58,30 @@
                                 <li>
                                     <a href="#">Контакты</a>
                                 </li>
-                            </ul>
-                            <ul class="btn-list d-flex align-items-center justify-content-end">
                                 <li>
-                                    <button class="btn-icon">
-                                        <i class="fa fa-phone" aria-hidden="true"></i>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button class="btn-icon">
-                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                    </button>
-                                </li>
-                                <li>
-                                    <select class="languages">
-                                        <option>RU</option>
-                                        <option>UA</option>
-                                    </select>
-                                </li>
-                                <li>
-                                    <button class="btn-icon">
-                                        <i class="fa fa-rub" aria-hidden="true"></i>
-                                    </button>
+                                    <ul class="btn-list btn-mobile d-flex align-items-center justify-content-end">
+                                        <li>
+                                            <button class="btn-icon">
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="btn-icon">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <select class="languages">
+                                                <option>RU</option>
+                                                <option>UA</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <button class="btn-icon">
+                                                <i class="fa fa-rub" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -100,13 +108,13 @@
                                     </button>
                                 </li>
                             </ul>
+                        <button class="btn-menu">
+                            <span class="top"></span>
+                            <span class="middle"></span>
+                            <span class="bottom"></span>
+                        </button>
                     </div>
                 </div>
-                <button class="btn-menu">
-                    <span class="top"></span>
-                    <span class="middle"></span>
-                    <span class="bottom"></span>
-                </button>
             </header>
             <main>
                 <div class="banner">
