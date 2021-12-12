@@ -162,6 +162,26 @@
     flex-direction: column;
     align-items: center;
   }
+  .img-area {
+    display: flex;
+    overflow: hidden;
+    height: 480px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+    @include breakpoint($tablet) {
+      height: 400px;
+      margin-bottom: 10px;
+    }
+
+    @include breakpoint($mobile) {
+      height: 310px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
 
   li {
     width: 33.3%;
@@ -179,27 +199,6 @@
     @include breakpoint($mobile) {
       width: 100%;
       padding: 0 30px;
-    }
-
-    .img-area {
-      display: flex;
-      overflow: hidden;
-      height: 480px;
-      border-radius: 5px;
-      margin-bottom: 30px;
-
-      @include breakpoint($tablet) {
-        height: 400px;
-        margin-bottom: 10px;
-      }
-
-      @include breakpoint($mobile) {
-        height: 310px;
-      }
-
-      img {
-        object-fit: cover;
-      }
     }
 
     h3 {
@@ -220,8 +219,6 @@
     }
 
     p {
-      font-size: $font-size-base;
-      line-height: $line-height-base;
       color: $emperor;
 
       @include breakpoint($mobile) {
@@ -320,17 +317,6 @@
       padding: 0 10px 8px;
     }
 
-    .vendor-code {
-      color: $emperor;
-      margin-bottom: 10px;
-
-      @include breakpoint($mobile) {
-        font-size: $font-size-base - 7;
-        line-height: $line-height-base - 6;
-        margin-bottom: 0;
-      }
-    }
-
     h3 {
       font-family: $font-Poiret-One;
       font-size: $font-size-base + 19;
@@ -356,6 +342,17 @@
 
     .btn-link {
       font-weight: 500;
+    }
+  }
+
+  .vendor-code {
+    color: $emperor;
+    margin-bottom: 10px;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 7 !important;
+      line-height: $line-height-base - 11 !important;
+      margin-bottom: 0;
     }
   }
 }
@@ -482,6 +479,10 @@
     &:after {
       transform: rotate(180deg);
       background-image: url("../images/arrow-down-accordion.svg");
+
+      @include breakpoint($mobile) {
+        background-image: url("../images/arrow-down-accordion-mobile.svg");
+      }
     }
   }
 
@@ -493,12 +494,18 @@
   &:after {
     transform: rotate(0deg);
     background-image: url("../images/arrow-down-accordion.svg");
+
+    @include breakpoint($mobile) {
+      background-image: url("../images/arrow-down-accordion-mobile.svg");
+    }
   }
 }
 
 .accordion-body {
-  font-size: $font-size-base - 5;
-  line-height: $line-height-base - 8;
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 5;
+    line-height: $line-height-base - 8;
+  }
 }
 
 .seo-text-wrap {
@@ -601,7 +608,7 @@
     height: 80px;
     width: 100%;
     font-size: $font-size-base;
-    line-height: $line-height-base;
+    line-height: $line-height-base - 11;
     background: $transparent;
     border-radius: 5px;
     padding: 31px 30px;

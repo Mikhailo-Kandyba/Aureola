@@ -96,8 +96,10 @@ h6 {
   font-weight: 700; }
 
 .container-xxl {
-  max-width: 1310px;
-  padding: 0 19px; }
+  max-width: 1310px; }
+  @media only screen and (max-width: 767px) {
+    .container-xxl {
+      padding: 0 19px; } }
 
 .btn-secondary {
   font-size: 17px;
@@ -537,6 +539,21 @@ h6 {
     .categories-list {
       flex-direction: column;
       align-items: center; } }
+  .categories-list .img-area {
+    display: flex;
+    overflow: hidden;
+    height: 480px;
+    border-radius: 5px;
+    margin-bottom: 30px; }
+    @media only screen and (max-width: 1023px) {
+      .categories-list .img-area {
+        height: 400px;
+        margin-bottom: 10px; } }
+    @media only screen and (max-width: 767px) {
+      .categories-list .img-area {
+        height: 310px; } }
+    .categories-list .img-area img {
+      object-fit: cover; }
   .categories-list li {
     width: 33.3%;
     padding: 0 62px;
@@ -551,21 +568,6 @@ h6 {
       .categories-list li {
         width: 100%;
         padding: 0 30px; } }
-    .categories-list li .img-area {
-      display: flex;
-      overflow: hidden;
-      height: 480px;
-      border-radius: 5px;
-      margin-bottom: 30px; }
-      @media only screen and (max-width: 1023px) {
-        .categories-list li .img-area {
-          height: 400px;
-          margin-bottom: 10px; } }
-      @media only screen and (max-width: 767px) {
-        .categories-list li .img-area {
-          height: 310px; } }
-      .categories-list li .img-area img {
-        object-fit: cover; }
     .categories-list li h3 {
       font-family: "Poiret One", cursive;
       font-size: 36px;
@@ -580,8 +582,6 @@ h6 {
           font-size: 20px;
           line-height: 24px; } }
     .categories-list li p {
-      font-size: 17px;
-      line-height: 28px;
       color: #565353; }
       @media only screen and (max-width: 767px) {
         .categories-list li p {
@@ -654,14 +654,6 @@ h6 {
     @media only screen and (max-width: 1023px) {
       .card-product .description {
         padding: 0 10px 8px; } }
-    .card-product .description .vendor-code {
-      color: #565353;
-      margin-bottom: 10px; }
-      @media only screen and (max-width: 767px) {
-        .card-product .description .vendor-code {
-          font-size: 10px;
-          line-height: 22px;
-          margin-bottom: 0; } }
     .card-product .description h3 {
       font-family: "Poiret One", cursive;
       font-size: 36px;
@@ -681,6 +673,14 @@ h6 {
           line-height: 20px; } }
     .card-product .description .btn-link {
       font-weight: 500; }
+  .card-product .vendor-code {
+    color: #565353;
+    margin-bottom: 10px; }
+    @media only screen and (max-width: 767px) {
+      .card-product .vendor-code {
+        font-size: 10px !important;
+        line-height: 17px !important;
+        margin-bottom: 0; } }
 
 .social-networks-wrap {
   margin-bottom: 53px; }
@@ -771,16 +771,23 @@ h6 {
     .accordion-button:not(.collapsed):after {
       transform: rotate(180deg);
       background-image: url("../images/arrow-down-accordion.svg"); }
+      @media only screen and (max-width: 767px) {
+        .accordion-button:not(.collapsed):after {
+          background-image: url("../images/arrow-down-accordion-mobile.svg"); } }
   .accordion-button:focus {
     border-color: transparent;
     box-shadow: none; }
   .accordion-button:after {
     transform: rotate(0deg);
     background-image: url("../images/arrow-down-accordion.svg"); }
+    @media only screen and (max-width: 767px) {
+      .accordion-button:after {
+        background-image: url("../images/arrow-down-accordion-mobile.svg"); } }
 
-.accordion-body {
-  font-size: 12px;
-  line-height: 20px; }
+@media only screen and (max-width: 767px) {
+  .accordion-body {
+    font-size: 12px;
+    line-height: 20px; } }
 
 .seo-text-wrap {
   margin-bottom: 73px; }
@@ -862,7 +869,7 @@ h6 {
     height: 80px;
     width: 100%;
     font-size: 17px;
-    line-height: 28px;
+    line-height: 17px;
     background: transparent;
     border-radius: 5px;
     padding: 31px 30px;
@@ -920,7 +927,7 @@ h6 {
     @media only screen and (max-width: 767px) {
       .contact-info address {
         font-size: 7px;
-        line-height: 17px; } }
+        line-height: 12px; } }
     .contact-info address:hover {
       color: #000; }
   .contact-info a {
@@ -959,7 +966,8 @@ h6 {
   flex-direction: column;
   align-items: flex-end;
   line-height: 30px;
-  font-weight: 500; }
+  font-weight: 500;
+  text-align: right; }
   @media only screen and (max-width: 767px) {
     .nav {
       font-size: 8px;
@@ -969,11 +977,12 @@ h6 {
 
 .copyright {
   line-height: 21px;
-  color: #565353; }
+  color: #565353;
+  font-weight: 500; }
   @media only screen and (max-width: 767px) {
     .copyright {
       font-size: 7px;
-      line-height: 14px; } }
+      line-height: 9px; } }
 
 .z-index-20 {
   position: relative;
@@ -1003,7 +1012,7 @@ h6 {
   @media only screen and (max-width: 767px) {
     .decor-text {
       font-size: 40px;
-      line-height: 77px;
+      line-height: 72px;
       right: 13px; } }
 
 .text-porcelain {

@@ -1,4 +1,9 @@
+@import "mixin";
+
 .container-xxl {
   max-width: 1310px;
-  padding: 0 19px;
+
+  @include breakpoint ($mobile) {
+    padding: 0 19px;
+  }
 }

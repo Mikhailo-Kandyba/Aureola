@@ -50,7 +50,7 @@
 
     @include breakpoint($mobile) {
       font-size: $font-size-base - 10;
-      line-height: $line-height-base - 11;
+      line-height: $line-height-base - 16;
     }
 
     &:hover {
@@ -106,6 +106,7 @@
   align-items: flex-end;
   line-height: $line-height-base + 2;
   font-weight: 500;
+  text-align: right;
 
   @include breakpoint($mobile) {
     font-size: $font-size-base - 9;
@@ -120,9 +121,10 @@
 .copyright {
   line-height: $line-height-base - 7;
   color: $emperor;
+  font-weight: 500;
 
   @include breakpoint($mobile) {
     font-size: $font-size-base - 10;
-    line-height: $line-height-base - 14;
+    line-height: $line-height-base - 19;
   }
 }

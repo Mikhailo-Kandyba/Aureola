@@ -33,7 +33,7 @@
 
   @include breakpoint($mobile) {
     font-size: $font-size-base + 23;
-    line-height: $line-height-base + 49;
+    line-height: $line-height-base + 44;
     right: 13px;
   }
 }
