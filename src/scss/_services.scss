@@ -1,0 +1,53 @@
+@import "mixin";
+@import "variables";
+
+.services-banner {
+  background-image: url("../images/servises-banner.png");
+}
+
+.breadcrumb-area-services {
+  .breadcrumb {
+    margin-bottom: 30px;
+  }
+
+  .breadcrumb-item {
+    &:first-child {
+      a {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.our-services {
+  .title-block {
+    font-size: $font-size-base +47;
+    line-height: $line-height-base + 38;
+    margin-bottom: 60px;
+  }
+}
+
+.our-services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -42px;
+
+  li {
+    width: 50%;
+    padding: 0 42px;
+    margin-bottom: 75px;
+
+    h3 {
+      font-family: $font-Poiret-One;
+      font-size: $font-size-base + 19;
+      line-height: $line-height-base +  3;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.write-to-us-wrap-services {
+  min-height: 1035px;
+}

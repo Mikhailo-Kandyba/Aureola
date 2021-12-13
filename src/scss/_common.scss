@@ -631,6 +631,35 @@
       }
     }
   }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    font-size: $font-size-base;
+    line-height: $line-height-base - 11;
+    background: $transparent;
+    border-radius: 5px;
+    padding: 31px 30px;
+    border: 1px solid $emperor;
+    min-height: 295px;
+
+    @include breakpoint($mobile) {
+      padding: 5px 15px;
+      min-height: 75px;
+    }
+
+    &::placeholder {
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      color: $dove-gray;
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 5;
+        line-height: $line-height-base - 8;
+        color: $emperor;
+      }
+    }
+  }
 }
 
 

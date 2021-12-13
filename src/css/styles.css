@@ -232,6 +232,24 @@ h6 {
   .btn-outline-secondary:focus {
     box-shadow: none !important; }
 
+.loading-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  position: relative;
+  padding: 5px 30px 5px 0; }
+  .loading-btn:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 12px;
+    height: 18px;
+    background-image: url("../images/loading-btn.svg");
+    background-repeat: no-repeat; }
+
 .header {
   padding: 17px 0;
   position: relative; }
@@ -887,6 +905,29 @@ h6 {
           font-size: 12px;
           line-height: 20px;
           color: #565353; } }
+  .user-form textarea {
+    resize: none;
+    width: 100%;
+    font-size: 17px;
+    line-height: 17px;
+    background: transparent;
+    border-radius: 5px;
+    padding: 31px 30px;
+    border: 1px solid #565353;
+    min-height: 295px; }
+    @media only screen and (max-width: 767px) {
+      .user-form textarea {
+        padding: 5px 15px;
+        min-height: 75px; } }
+    .user-form textarea::placeholder {
+      font-size: 17px;
+      line-height: 28px;
+      color: #736f6e; }
+      @media only screen and (max-width: 767px) {
+        .user-form textarea::placeholder {
+          font-size: 12px;
+          line-height: 20px;
+          color: #565353; } }
 
 .banner {
   display: flex;
@@ -1199,6 +1240,39 @@ h6 {
 
 .subcategories-list {
   padding: 0 0 0 14px; }
+
+.services-banner {
+  background-image: url("../images/servises-banner.png"); }
+
+.breadcrumb-area-services .breadcrumb {
+  margin-bottom: 30px; }
+
+.breadcrumb-area-services .breadcrumb-item:first-child a {
+  padding-left: 0; }
+
+.our-services .title-block {
+  font-size: 64px;
+  line-height: 66px;
+  margin-bottom: 60px; }
+
+.our-services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -42px; }
+  .our-services-list li {
+    width: 50%;
+    padding: 0 42px;
+    margin-bottom: 75px; }
+    .our-services-list li h3 {
+      font-family: "Poiret One", cursive;
+      font-size: 36px;
+      line-height: 31px;
+      font-weight: 400;
+      margin-bottom: 30px; }
+
+.write-to-us-wrap-services {
+  min-height: 1035px; }
 
 .footer {
   padding: 50px 0 10px;

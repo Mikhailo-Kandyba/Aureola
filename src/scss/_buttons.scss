@@ -177,3 +177,24 @@
     box-shadow: none !important;
   }
 }
+
+.loading-btn {
+  font-family: $base-font-family;
+  font-weight: 400;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  position: relative;
+  padding: 5px 30px 5px 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 12px;
+    height: 18px;
+    background-image: url("../images/loading-btn.svg");
+    background-repeat: no-repeat;
+  }
+}
