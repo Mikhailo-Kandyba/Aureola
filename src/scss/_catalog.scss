@@ -1,0 +1,263 @@
+@import "mixin";
+@import "variables";
+
+.banner {
+  display: flex;
+  align-items: center;
+  background-image: url("../images/banner-catalog.png");
+  min-height: 360px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -107px;
+  padding: 130px 0 15px;
+  margin-bottom: 35px;
+}
+
+.site-navigation {
+  background: $porcelain-average;
+  border-radius: 5px;
+  max-width: 300px;
+  width: 100%;
+  height: fit-content;
+  padding: 30px 40px 30px 30px;
+
+  li {
+    color: $emperor;
+    margin-bottom: 4px;
+  }
+
+  a {
+    display: block;
+    position: relative;
+    background: $porcelain-average;
+    padding: 10px 18px 10px 10px;
+    border-radius: 5px;
+
+    &:hover {
+      background: $porcelain;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      width: 17px;
+      height: 18px;
+      background-image: url("../images/arrow-site-navigation.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.catalog-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 66px;
+}
+
+.breadcrumb {
+  align-items: center;
+}
+
+.breadcrumb-item {
+  a {
+    display: block;
+    padding: 0 11px;
+    color: $black;
+  }
+}
+
+.breadcrumb-item.active {
+  color: $emperor;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+  position: relative;
+  padding-left: 16px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    color: $emperor;
+    width: 6px;
+    height: 6px;
+    background-image: url("../images/dot.svg");
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
+
+.catalog-content {
+  max-width: 910px;
+
+  .breadcrumb {
+    margin-left: 40px;
+    margin-bottom: 47px;
+  }
+}
+
+.catalog-page {
+  margin-bottom: 15px;
+
+  li {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    max-width: 285px;
+
+    &:hover {
+      box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .description {
+    h3 {
+      font-size: $font-size-base + 7;
+      line-height: $line-height-base + 1;
+    }
+
+    p {
+      font-size: $font-size-base - 5;
+      line-height: $line-height-base - 6;
+    }
+
+    .vendor-code{
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+    }
+  }
+}
+
+.btn-primary {
+  color: $transparent;
+  background-color: $transparent;
+  border-color: $transparent;
+  padding: 37px 0;
+
+  &:active,
+  &:focus {
+    color: $transparent !important;
+    background-color: $transparent !important;
+    border-color: $transparent !important;
+    box-shadow: none !important;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:hover {
+    color: $transparent;
+    background-color: $transparent;
+    border-color: $transparent;
+  }
+}
+
+.modal {
+  background: rgba(198, 195, 195, 0.7);
+}
+
+.modal-content {
+  border: none;
+  max-width: 330px;
+}
+
+.modal-title {
+  font-family: $font-Poiret-One;
+  font-size: $font-size-base + 7;
+  line-height: $line-height-base + 11;
+  font-weight: 400;
+}
+
+.modal-body {
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  input {
+    width: 100%;
+    border: 1px solid $emperor;
+    height: 35px;
+    background: $transparent;
+    font-size: $font-size-base;
+    line-height: $line-height-base - 11;
+    border-radius: 5px;
+    padding: 5px 15px;
+
+    &::placeholder {
+      color: $boulder;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    resize: none;
+    height: 97px;
+    padding: 5px 15px;
+  }
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal.show {
+  .modal-dialog {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.page-item.active  {
+  .page-link {
+    color: $emperor;
+    background-color: $transparent;
+    border-color: $transparent;
+  }
+}
+
+.page-item {
+  &:nth-child(3) {
+    .page-link {
+      padding: 6px 0 6px 6px;
+    }
+  }
+
+  &:last-child {
+    .page-link {
+      padding: 6px 6px 6px 0;
+    }
+  }
+  .add {
+    padding: 0;
+  }
+}
+
+.pagination {
+  align-items: center;
+}
+
+.page-link {
+  font-weight: 500;
+  line-height: $line-height-base - 3;
+  color: $cotton-seed;
+  border: none;
+  padding: 6px;
+
+  &:active,
+  &:focus {
+    color: $emperor !important;
+    background-color: $transparent !important;
+    border-color: $transparent !important;
+    box-shadow: none !important;
+  }
+
+  &:hover {
+    color: $emperor;
+    background: $transparent;
+  }
+}

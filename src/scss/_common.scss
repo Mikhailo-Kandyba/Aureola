@@ -1,11 +1,11 @@
 @import "mixin";
 @import "variables";
 
-.banner {
+.home-banner {
   display: flex;
   align-items: center;
   min-height: 742px;
-  background-image: url("../images/banner.png");
+  background-image: url("../images/banner-home.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
