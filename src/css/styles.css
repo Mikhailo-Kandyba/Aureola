@@ -907,6 +907,12 @@ h6 {
     .banner {
       margin-top: -190px;
       padding: 160px 0 15px; } }
+  @media only screen and (max-width: 767px) {
+    .banner {
+      margin-top: -80px;
+      padding: 65px 0 15px;
+      min-height: 130px;
+      margin-bottom: 10px; } }
 
 .site-navigation {
   background: #f5f6f7;
@@ -924,6 +930,12 @@ h6 {
     .site-navigation {
       max-width: 250px;
       padding: 10px; } }
+  @media only screen and (max-width: 767px) {
+    .site-navigation {
+      max-width: 100%;
+      padding: 22px 30px;
+      margin-right: 0;
+      margin-bottom: 35px; } }
   .site-navigation li {
     color: #565353;
     margin-bottom: 4px; }
@@ -953,14 +965,30 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .catalog-wrap {
       margin-bottom: 15px; } }
+  @media only screen and (max-width: 767px) {
+    .catalog-wrap {
+      flex-direction: column; } }
+  .catalog-wrap .breadcrumb-mobile {
+    display: none; }
+    @media only screen and (max-width: 767px) {
+      .catalog-wrap .breadcrumb-mobile {
+        display: block; } }
 
 .breadcrumb {
   align-items: center; }
+
+@media only screen and (max-width: 767px) {
+  .breadcrumb-item {
+    font-size: 12px;
+    line-height: 20px; } }
 
 .breadcrumb-item a {
   display: block;
   padding: 0 11px;
   color: #000; }
+  @media only screen and (max-width: 767px) {
+    .breadcrumb-item a {
+      padding: 0 5px; } }
 
 .breadcrumb-item.active {
   color: #565353; }
@@ -968,6 +996,9 @@ h6 {
 .breadcrumb-item + .breadcrumb-item {
   position: relative;
   padding-left: 16px; }
+  @media only screen and (max-width: 767px) {
+    .breadcrumb-item + .breadcrumb-item {
+      padding-left: 7px; } }
   .breadcrumb-item + .breadcrumb-item::before {
     content: "";
     position: absolute;
@@ -979,6 +1010,15 @@ h6 {
     top: 50%;
     left: 0;
     transform: translate(0, -50%); }
+    @media only screen and (max-width: 767px) {
+      .breadcrumb-item + .breadcrumb-item::before {
+        background-image: url("../images/dot-mobile.svg");
+        width: 3px;
+        height: 3px; } }
+
+@media only screen and (max-width: 767px) {
+  .breadcrumb-area {
+    display: none; } }
 
 .catalog-content {
   max-width: 910px; }
@@ -998,14 +1038,25 @@ h6 {
     @media only screen and (max-width: 1210px) {
       .catalog-page li {
         max-width: 235px; } }
+    @media only screen and (max-width: 767px) {
+      .catalog-page li {
+        max-width: 100%;
+        margin-bottom: 0 0 20px; } }
     .catalog-page li:hover {
       box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25); }
   .catalog-page .description h3 {
     font-size: 24px;
     line-height: 29px; }
+    @media only screen and (max-width: 767px) {
+      .catalog-page .description h3 {
+        font-size: 17px;
+        line-height: 24px; } }
   .catalog-page .description p {
     font-size: 12px;
     line-height: 22px; }
+    @media only screen and (max-width: 767px) {
+      .catalog-page .description p {
+        line-height: 20px; } }
   .catalog-page .description .vendor-code {
     font-size: 17px;
     line-height: 28px; }
@@ -1018,6 +1069,9 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .btn-primary {
       padding: 5px 0; } }
+  @media only screen and (max-width: 767px) {
+    .btn-primary {
+      padding: 0; } }
   .btn-primary:active, .btn-primary:focus {
     color: transparent !important;
     background-color: transparent !important;
@@ -1029,6 +1083,9 @@ h6 {
     color: transparent;
     background-color: transparent;
     border-color: transparent; }
+  @media only screen and (max-width: 767px) {
+    .btn-primary img {
+      max-width: 160px; } }
 
 .modal {
   background: rgba(198, 195, 195, 0.7); }
@@ -1060,6 +1117,10 @@ h6 {
     padding: 5px 15px; }
     .modal-body input::placeholder {
       color: #787676; }
+      @media only screen and (max-width: 767px) {
+        .modal-body input::placeholder {
+          font-size: 12px;
+          line-height: 12px; } }
   .modal-body textarea {
     width: 100%;
     resize: none;
@@ -1099,6 +1160,9 @@ h6 {
 
 .pagination {
   align-items: center; }
+  @media only screen and (max-width: 767px) {
+    .pagination {
+      display: none; } }
 
 .page-link {
   font-weight: 500;
