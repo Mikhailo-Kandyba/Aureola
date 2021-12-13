@@ -12,6 +12,16 @@
   margin-top: -107px;
   padding: 130px 0 15px;
   margin-bottom: 35px;
+
+  @include breakpoint($desktop) {
+    margin-top: -120px;
+    padding: 80px 0 15px;
+  }
+
+  @include breakpoint($tablet) {
+    margin-top: -190px;
+    padding: 160px 0 15px;
+  }
 }
 
 .site-navigation {
@@ -26,6 +36,11 @@
   @include breakpoint($desktop) {
     max-width: 260px;
     padding: 20px;
+  }
+
+  @include breakpoint($tablet) {
+    max-width: 250px;
+    padding: 10px;
   }
 
   li {
@@ -62,6 +77,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 66px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 15px;
+  }
 }
 
 .breadcrumb {
@@ -105,6 +124,11 @@
   .breadcrumb {
     margin-left: 40px;
     margin-bottom: 47px;
+
+    @include breakpoint($tablet) {
+      margin-left: 10px;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -147,6 +171,10 @@
   background-color: $transparent;
   border-color: $transparent;
   padding: 37px 0;
+
+  @include breakpoint($tablet) {
+    padding: 5px 0;
+  }
 
   &:active,
   &:focus {

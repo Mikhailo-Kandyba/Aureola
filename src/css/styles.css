@@ -899,6 +899,14 @@ h6 {
   margin-top: -107px;
   padding: 130px 0 15px;
   margin-bottom: 35px; }
+  @media only screen and (max-width: 1210px) {
+    .banner {
+      margin-top: -120px;
+      padding: 80px 0 15px; } }
+  @media only screen and (max-width: 1023px) {
+    .banner {
+      margin-top: -190px;
+      padding: 160px 0 15px; } }
 
 .site-navigation {
   background: #f5f6f7;
@@ -912,6 +920,10 @@ h6 {
     .site-navigation {
       max-width: 260px;
       padding: 20px; } }
+  @media only screen and (max-width: 1023px) {
+    .site-navigation {
+      max-width: 250px;
+      padding: 10px; } }
   .site-navigation li {
     color: #565353;
     margin-bottom: 4px; }
@@ -938,6 +950,9 @@ h6 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 66px; }
+  @media only screen and (max-width: 1023px) {
+    .catalog-wrap {
+      margin-bottom: 15px; } }
 
 .breadcrumb {
   align-items: center; }
@@ -970,6 +985,10 @@ h6 {
   .catalog-content .breadcrumb {
     margin-left: 40px;
     margin-bottom: 47px; }
+    @media only screen and (max-width: 1023px) {
+      .catalog-content .breadcrumb {
+        margin-left: 10px;
+        margin-bottom: 15px; } }
 
 .catalog-page {
   margin-bottom: 15px; }
@@ -996,6 +1015,9 @@ h6 {
   background-color: transparent;
   border-color: transparent;
   padding: 37px 0; }
+  @media only screen and (max-width: 1023px) {
+    .btn-primary {
+      padding: 5px 0; } }
   .btn-primary:active, .btn-primary:focus {
     color: transparent !important;
     background-color: transparent !important;
