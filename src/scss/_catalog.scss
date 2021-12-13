@@ -164,6 +164,7 @@
 .modal-content {
   border: none;
   max-width: 330px;
+  padding: 26px 33px 3px 33px;
 }
 
 .modal-title {
@@ -171,9 +172,12 @@
   font-size: $font-size-base + 7;
   line-height: $line-height-base + 11;
   font-weight: 400;
+  margin-bottom: 13px;
 }
 
 .modal-body {
+  padding: 0;
+
   .form-group {
     margin-bottom: 16px;
   }
@@ -203,6 +207,21 @@
 
 .modal-header {
   border-bottom: none;
+  padding: 0;
+
+  .btn-close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    &:active,
+    &:focus {
+      color: $emperor !important;
+      background-color: $transparent !important;
+      border-color: $transparent !important;
+      box-shadow: none !important;
+    }
+  }
 }
 
 .modal.show {

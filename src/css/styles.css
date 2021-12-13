@@ -1005,37 +1005,49 @@ h6 {
 
 .modal-content {
   border: none;
-  max-width: 330px; }
+  max-width: 330px;
+  padding: 26px 33px 3px 33px; }
 
 .modal-title {
   font-family: "Poiret One", cursive;
   font-size: 24px;
   line-height: 39px;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-bottom: 13px; }
 
-.modal-body .form-group {
-  margin-bottom: 16px; }
-
-.modal-body input {
-  width: 100%;
-  border: 1px solid #565353;
-  height: 35px;
-  background: transparent;
-  font-size: 17px;
-  line-height: 17px;
-  border-radius: 5px;
-  padding: 5px 15px; }
-  .modal-body input::placeholder {
-    color: #787676; }
-
-.modal-body textarea {
-  width: 100%;
-  resize: none;
-  height: 97px;
-  padding: 5px 15px; }
+.modal-body {
+  padding: 0; }
+  .modal-body .form-group {
+    margin-bottom: 16px; }
+  .modal-body input {
+    width: 100%;
+    border: 1px solid #565353;
+    height: 35px;
+    background: transparent;
+    font-size: 17px;
+    line-height: 17px;
+    border-radius: 5px;
+    padding: 5px 15px; }
+    .modal-body input::placeholder {
+      color: #787676; }
+  .modal-body textarea {
+    width: 100%;
+    resize: none;
+    height: 97px;
+    padding: 5px 15px; }
 
 .modal-header {
-  border-bottom: none; }
+  border-bottom: none;
+  padding: 0; }
+  .modal-header .btn-close {
+    position: absolute;
+    right: 15px;
+    top: 15px; }
+    .modal-header .btn-close:active, .modal-header .btn-close:focus {
+      color: #565353 !important;
+      background-color: transparent !important;
+      border-color: transparent !important;
+      box-shadow: none !important; }
 
 .modal.show .modal-dialog {
   display: flex;
