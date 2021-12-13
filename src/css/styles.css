@@ -925,7 +925,7 @@ h6 {
         height: 75px;
         min-height: auto; } }
     .user-form textarea:focus {
-      outline: nonegit; }
+      outline: none; }
     .user-form textarea::placeholder {
       font-size: 17px;
       line-height: 28px;
