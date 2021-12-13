@@ -529,7 +529,7 @@ h6 {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 -62px; }
-  @media only screen and (max-width: 1205px) {
+  @media only screen and (max-width: 1210px) {
     .categories-list {
       margin: 0 -12px; } }
   @media only screen and (max-width: 1023px) {
@@ -558,7 +558,7 @@ h6 {
     width: 33.3%;
     padding: 0 62px;
     margin-bottom: 20px; }
-    @media only screen and (max-width: 1205px) {
+    @media only screen and (max-width: 1210px) {
       .categories-list li {
         padding: 0 12px; } }
     @media only screen and (max-width: 1023px) {
@@ -621,7 +621,7 @@ h6 {
     border-radius: 5px;
     background: #fff;
     margin: 0 5px 32px; }
-    @media only screen and (max-width: 1205px) {
+    @media only screen and (max-width: 1210px) {
       .card-product li {
         max-width: 330px; } }
     @media only screen and (max-width: 1023px) {
@@ -648,7 +648,7 @@ h6 {
       display: block; }
   .card-product .description {
     padding: 0 25px 8px; }
-    @media only screen and (max-width: 1205px) {
+    @media only screen and (max-width: 1210px) {
       .card-product .description {
         padding: 0 2px 8px; } }
     @media only screen and (max-width: 1023px) {
@@ -906,7 +906,12 @@ h6 {
   max-width: 300px;
   width: 100%;
   height: fit-content;
-  padding: 30px 40px 30px 30px; }
+  padding: 30px 40px 30px 30px;
+  margin-right: 10px; }
+  @media only screen and (max-width: 1210px) {
+    .site-navigation {
+      max-width: 260px;
+      padding: 20px; } }
   .site-navigation li {
     color: #565353;
     margin-bottom: 4px; }
@@ -971,6 +976,9 @@ h6 {
   .catalog-page li {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
     max-width: 285px; }
+    @media only screen and (max-width: 1210px) {
+      .catalog-page li {
+        max-width: 235px; } }
     .catalog-page li:hover {
       box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25); }
   .catalog-page .description h3 {
@@ -1226,7 +1234,7 @@ h6 {
 
 .padding-left-73 {
   padding-left: 73px; }
-  @media only screen and (max-width: 1205px) {
+  @media only screen and (max-width: 1210px) {
     .padding-left-73 {
       padding-left: 15px; } }
   @media only screen and (max-width: 767px) {
