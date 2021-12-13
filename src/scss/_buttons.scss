@@ -186,6 +186,11 @@
   position: relative;
   padding: 5px 30px 5px 0;
 
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 5;
+    line-height: $line-height-base - 8;
+  }
+
   &:after {
     content: "";
     position: absolute;

@@ -645,7 +645,12 @@
 
     @include breakpoint($mobile) {
       padding: 5px 15px;
-      min-height: 75px;
+      height: 75px;
+      min-height: auto;
+    }
+
+    &:focus {
+      outline: nonegit ;
     }
 
     &::placeholder {
