@@ -3,6 +3,7 @@
 
 .services-banner {
   background-image: url("../images/servises-banner.png");
+  padding: 190px 0 15px;
 }
 
 .breadcrumb-area-services {
@@ -24,6 +25,10 @@
     font-size: $font-size-base +47;
     line-height: $line-height-base + 38;
     margin-bottom: 60px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -33,10 +38,19 @@
   flex-wrap: wrap;
   margin: 0 -42px;
 
+  @include breakpoint($tablet) {
+    margin: 0 -15px;
+  }
+
   li {
     width: 50%;
     padding: 0 42px;
     margin-bottom: 75px;
+
+    @include breakpoint($tablet) {
+      padding: 0 15px;
+      margin-bottom: 25px;
+    }
 
     h3 {
       font-family: $font-Poiret-One;
@@ -44,10 +58,18 @@
       line-height: $line-height-base +  3;
       font-weight: 400;
       margin-bottom: 30px;
+
+      @include breakpoint($tablet) {
+        margin-bottom: 10px;
+      }
     }
   }
 }
 
 .write-to-us-wrap-services {
   min-height: 1035px;
+
+  @include breakpoint($tablet) {
+    min-height: 935px;
+  }
 }
