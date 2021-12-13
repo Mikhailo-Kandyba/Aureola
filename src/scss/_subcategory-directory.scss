@@ -1,3 +1,22 @@
 @import "variables";
 @import "mixin";
 
+.subcategory-directory-banner {
+  background-image: url("../images/subcategory-directory-banner.png");
+}
+
+.subcategories-list {
+  .active {
+    color: $black;
+  }
+
+  a {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.subcategories-list {
+  padding: 0 0 0 14px;
+}

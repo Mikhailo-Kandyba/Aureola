@@ -898,7 +898,8 @@ h6 {
   background-repeat: no-repeat;
   margin-top: -107px;
   padding: 130px 0 15px;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  position: relative; }
   @media only screen and (max-width: 1210px) {
     .banner {
       margin-top: -120px;
@@ -913,11 +914,19 @@ h6 {
       padding: 65px 0 15px;
       min-height: 130px;
       margin-bottom: 10px; } }
+  .banner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.4); }
 
 .site-navigation {
   background: #f5f6f7;
   border-radius: 5px;
-  max-width: 300px;
+  max-width: 330px;
   width: 100%;
   height: fit-content;
   padding: 30px 40px 30px 30px;
@@ -928,7 +937,7 @@ h6 {
       padding: 20px; } }
   @media only screen and (max-width: 1023px) {
     .site-navigation {
-      max-width: 250px;
+      max-width: 235px;
       padding: 10px; } }
   @media only screen and (max-width: 767px) {
     .site-navigation {
@@ -1178,6 +1187,18 @@ h6 {
   .page-link:hover {
     color: #565353;
     background: transparent; }
+
+.subcategory-directory-banner {
+  background-image: url("../images/subcategory-directory-banner.png"); }
+
+.subcategories-list .active {
+  color: #000; }
+
+.subcategories-list a:after {
+  display: none; }
+
+.subcategories-list {
+  padding: 0 0 0 14px; }
 
 .footer {
   padding: 50px 0 10px;
