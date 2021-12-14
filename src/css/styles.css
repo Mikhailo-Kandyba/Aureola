@@ -1383,6 +1383,47 @@ h6 {
     overflow: hidden;
     border-radius: 5px; }
 
+.contact-wrap .title-block {
+  line-height: 54px;
+  margin-bottom: 70px; }
+
+.map-area {
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 60px; }
+  .map-area iframe {
+    width: 100% !important; }
+
+.contact-area {
+  margin-bottom: 70px; }
+  .contact-area .title-block {
+    line-height: 54px;
+    margin-bottom: 32px; }
+  .contact-area address {
+    display: inline-block;
+    line-height: 47px;
+    margin-bottom: 3px; }
+    .contact-area address:hover {
+      text-decoration: underline; }
+  .contact-area p {
+    font-weight: 500;
+    margin-bottom: 8px; }
+    .contact-area p a,
+    .contact-area p i {
+      font-size: 20px;
+      line-height: 47px;
+      font-weight: 400;
+      font-style: normal; }
+    .contact-area p i {
+      padding-left: 30px; }
+    .contact-area p a {
+      padding-left: 30px; }
+      .contact-area p a:hover {
+        text-decoration: underline; }
+
+.breadcrumb-contact {
+  margin-bottom: 70px; }
+
 .footer {
   padding: 50px 0 10px;
   background: linear-gradient(0deg, #c7c7c7 14%, white 100%); }

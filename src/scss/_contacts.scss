@@ -1,0 +1,67 @@
+@import "mixin";
+@import "variables";
+
+.contact-wrap {
+  .title-block {
+    line-height: $line-height-base + 26px;
+    margin-bottom: 70px;
+  }
+}
+
+.map-area {
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 60px;
+
+  iframe {
+    width: 100% !important;
+  }
+}
+
+.contact-area {
+  margin-bottom: 70px;
+
+  .title-block {
+    line-height: $line-height-base + 26px;
+    margin-bottom: 32px;
+  }
+
+  address {
+    display: inline-block;
+    line-height: $line-height-base + 19;
+    margin-bottom: 3px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    margin-bottom: 8px;
+
+    a,
+    i {
+      font-size: $font-size-base + 3;
+      line-height: $line-height-base + 19;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    i {
+      padding-left: 30px;
+    }
+
+    a {
+      padding-left: 30px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.breadcrumb-contact {
+  margin-bottom: 70px;
+}
