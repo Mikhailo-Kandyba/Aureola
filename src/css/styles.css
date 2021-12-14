@@ -1471,24 +1471,45 @@ h6 {
 
 .content-about-us {
   margin-bottom: 60px; }
+  @media only screen and (max-width: 767px) {
+    .content-about-us {
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .content-about-us {
+      margin-bottom: 20px; } }
   .content-about-us p {
     font-weight: 300;
     font-size: 24px;
     line-height: 35px;
     margin-bottom: 20px; }
+    @media only screen and (max-width: 767px) {
+      .content-about-us p {
+        font-size: 12px;
+        line-height: 18px; } }
     .content-about-us p span {
       font-family: "Poiret One", cursive;
       font-weight: 400;
       font-size: 36px;
       line-height: 53px;
       color: #565353; }
+      @media only screen and (max-width: 767px) {
+        .content-about-us p span {
+          font-size: 20px;
+          line-height: 30px; } }
   .content-about-us:last-child p {
     font-weight: 400;
     font-size: 17px;
     line-height: 28px; }
+    @media only screen and (max-width: 767px) {
+      .content-about-us:last-child p {
+        font-size: 12px;
+        line-height: 20px; } }
 
 .about-us-breadcrumb {
   margin-bottom: 50px; }
+  @media only screen and (max-width: 1023px) {
+    .about-us-breadcrumb {
+      margin-bottom: 10px; } }
 
 .banner-about-us {
   display: flex;
@@ -1502,6 +1523,11 @@ h6 {
   padding: 20px 0;
   position: relative;
   margin-bottom: 70px; }
+  @media only screen and (max-width: 767px) {
+    .banner-about-us {
+      padding: 10px 0;
+      min-height: 100px;
+      margin-bottom: 20px; } }
   .banner-about-us:after {
     content: "";
     position: absolute;
@@ -1517,8 +1543,24 @@ h6 {
     font-size: 48px;
     line-height: 49px;
     padding-left: 160px; }
+    @media only screen and (max-width: 1210px) {
+      .banner-about-us p {
+        padding-left: 70px; } }
+    @media only screen and (max-width: 1023px) {
+      .banner-about-us p {
+        padding-left: 80px; } }
+    @media only screen and (max-width: 767px) {
+      .banner-about-us p {
+        font-size: 12px;
+        line-height: 13px;
+        padding-left: 70px; } }
   .banner-about-us .title-home-page {
     margin-bottom: 110px; }
+    @media only screen and (max-width: 767px) {
+      .banner-about-us .title-home-page {
+        font-size: 20px;
+        line-height: 21px;
+        margin-bottom: 25px; } }
 
 .footer {
   padding: 50px 0 10px;
