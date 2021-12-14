@@ -3,12 +3,40 @@
 
 .header-custom-wedding-rings {
   margin-bottom: 45px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 14px 0 22px;
+  }
+}
+
+.breadcrumb-rings {
+  .breadcrumb {
+    @include breakpoint($mobile) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .product-description {
   .title-block {
     line-height: $line-height-base + 16;
     margin-bottom: 80px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 40px;
+    }
+
+    @include breakpoint($mobile) {
+      line-height: $line-height-base - 3;
+    }
+
+    @include breakpoint($mobile) {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -19,15 +47,41 @@
 .product-area {
   margin-bottom: 25px;
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
   &:nth-child(even) {
     flex-direction: row-reverse;
+
+    @include breakpoint($mobile) {
+      flex-direction: column;
+    }
   }
 
   p {
     margin-bottom: 65px;
 
+    @include breakpoint($tablet) {
+      margin-bottom: 20px;
+    }
+
+    @include breakpoint($mobile) {
+      margin-bottom: 15px;
+    }
+
     &:last-child {
       margin-bottom: 15px;
+
+      @include breakpoint($mobile) {
+        display: none;
+      }
+    }
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 5;
+      line-height: $line-height-base - 8;
     }
   }
 

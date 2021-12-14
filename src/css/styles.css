@@ -1324,22 +1324,61 @@ h6 {
 
 .header-custom-wedding-rings {
   margin-bottom: 45px; }
+  @media only screen and (max-width: 1023px) {
+    .header-custom-wedding-rings {
+      margin-bottom: 0; } }
+  @media only screen and (max-width: 767px) {
+    .header-custom-wedding-rings {
+      padding: 14px 0 22px; } }
+
+@media only screen and (max-width: 767px) {
+  .breadcrumb-rings .breadcrumb {
+    margin-bottom: 20px; } }
 
 .product-description .title-block {
   line-height: 44px;
   margin-bottom: 80px; }
+  @media only screen and (max-width: 1023px) {
+    .product-description .title-block {
+      margin-bottom: 40px; } }
+  @media only screen and (max-width: 767px) {
+    .product-description .title-block {
+      line-height: 25px; } }
+  @media only screen and (max-width: 767px) {
+    .product-description .title-block {
+      margin-bottom: 10px; } }
 
 .about-the-product {
   margin-bottom: 55px; }
 
 .product-area {
   margin-bottom: 25px; }
+  @media only screen and (max-width: 767px) {
+    .product-area {
+      flex-direction: column;
+      margin-bottom: 5px; } }
   .product-area:nth-child(even) {
     flex-direction: row-reverse; }
+    @media only screen and (max-width: 767px) {
+      .product-area:nth-child(even) {
+        flex-direction: column; } }
   .product-area p {
     margin-bottom: 65px; }
+    @media only screen and (max-width: 1023px) {
+      .product-area p {
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 767px) {
+      .product-area p {
+        margin-bottom: 15px; } }
     .product-area p:last-child {
       margin-bottom: 15px; }
+      @media only screen and (max-width: 767px) {
+        .product-area p:last-child {
+          display: none; } }
+    @media only screen and (max-width: 767px) {
+      .product-area p {
+        font-size: 12px;
+        line-height: 20px; } }
   .product-area .img-area {
     overflow: hidden;
     border-radius: 5px; }
