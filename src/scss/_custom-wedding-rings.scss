@@ -1,0 +1,38 @@
+@import "variables";
+@import "mixin";
+
+.header-custom-wedding-rings {
+  margin-bottom: 45px;
+}
+
+.product-description {
+  .title-block {
+    line-height: $line-height-base + 16;
+    margin-bottom: 80px;
+  }
+}
+
+.about-the-product {
+  margin-bottom: 55px;
+}
+
+.product-area {
+  margin-bottom: 25px;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  p {
+    margin-bottom: 65px;
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
+
+  .img-area {
+    overflow: hidden;
+    border-radius: 5px;
+  }
+}

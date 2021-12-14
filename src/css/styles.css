@@ -1322,6 +1322,28 @@ h6 {
     .write-to-us-wrap-services {
       min-height: 415px; } }
 
+.header-custom-wedding-rings {
+  margin-bottom: 45px; }
+
+.product-description .title-block {
+  line-height: 44px;
+  margin-bottom: 80px; }
+
+.about-the-product {
+  margin-bottom: 55px; }
+
+.product-area {
+  margin-bottom: 25px; }
+  .product-area:nth-child(even) {
+    flex-direction: row-reverse; }
+  .product-area p {
+    margin-bottom: 65px; }
+    .product-area p:last-child {
+      margin-bottom: 15px; }
+  .product-area .img-area {
+    overflow: hidden;
+    border-radius: 5px; }
+
 .footer {
   padding: 50px 0 10px;
   background: linear-gradient(0deg, #c7c7c7 14%, white 100%); }
