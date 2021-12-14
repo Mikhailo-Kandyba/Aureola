@@ -1469,6 +1469,57 @@ h6 {
     .breadcrumb-contact {
       margin-bottom: 23px; } }
 
+.content-about-us {
+  margin-bottom: 60px; }
+  .content-about-us p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 20px; }
+    .content-about-us p span {
+      font-family: "Poiret One", cursive;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 53px;
+      color: #565353; }
+  .content-about-us:last-child p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px; }
+
+.about-us-breadcrumb {
+  margin-bottom: 50px; }
+
+.banner-about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/our-goal-banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 410px;
+  padding: 20px 0;
+  position: relative;
+  margin-bottom: 70px; }
+  .banner-about-us:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px); }
+  .banner-about-us p {
+    font-family: "Poiret One", cursive;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 49px;
+    padding-left: 160px; }
+  .banner-about-us .title-home-page {
+    margin-bottom: 110px; }
+
 .footer {
   padding: 50px 0 10px;
   background: linear-gradient(0deg, #c7c7c7 14%, white 100%); }
