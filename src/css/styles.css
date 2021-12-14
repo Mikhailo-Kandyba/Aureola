@@ -1386,43 +1386,88 @@ h6 {
 .contact-wrap .title-block {
   line-height: 54px;
   margin-bottom: 70px; }
+  @media only screen and (max-width: 767px) {
+    .contact-wrap .title-block {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 15px; } }
 
 .map-area {
   overflow: hidden;
   border-radius: 5px;
   margin-bottom: 60px; }
+  @media only screen and (max-width: 767px) {
+    .map-area {
+      margin-bottom: 6px; } }
   .map-area iframe {
     width: 100% !important; }
+    @media only screen and (max-width: 767px) {
+      .map-area iframe {
+        height: 128px; } }
 
 .contact-area {
   margin-bottom: 70px; }
+  @media only screen and (max-width: 767px) {
+    .contact-area {
+      margin-bottom: 5px; } }
   .contact-area .title-block {
     line-height: 54px;
     margin-bottom: 32px; }
+    @media only screen and (max-width: 767px) {
+      .contact-area .title-block {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0; } }
   .contact-area address {
     display: inline-block;
     line-height: 47px;
     margin-bottom: 3px; }
+    @media only screen and (max-width: 767px) {
+      .contact-area address {
+        font-size: 12px;
+        line-height: 28px; } }
     .contact-area address:hover {
       text-decoration: underline; }
   .contact-area p {
     font-weight: 500;
     margin-bottom: 8px; }
-    .contact-area p a,
-    .contact-area p i {
+    @media only screen and (max-width: 767px) {
+      .contact-area p {
+        font-size: 12px;
+        line-height: 28px; } }
+    .contact-area p a {
       font-size: 20px;
       line-height: 47px;
       font-weight: 400;
-      font-style: normal; }
-    .contact-area p i {
+      font-style: normal;
       padding-left: 30px; }
-    .contact-area p a {
-      padding-left: 30px; }
-      .contact-area p a:hover {
-        text-decoration: underline; }
+      @media only screen and (max-width: 767px) {
+        .contact-area p a {
+          font-size: 12px;
+          line-height: 28px;
+          padding-left: 5px; }
+          .contact-area p a:hover {
+            text-decoration: underline; } }
+
+.schedule {
+  display: flex; }
+  .schedule p:last-child {
+    padding-left: 30px; }
+    @media only screen and (max-width: 767px) {
+      .schedule p:last-child {
+        padding-left: 5px; } }
+  @media only screen and (max-width: 767px) {
+    .schedule span {
+      display: block; } }
 
 .breadcrumb-contact {
   margin-bottom: 70px; }
+  @media only screen and (max-width: 1023px) {
+    .breadcrumb-contact {
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .breadcrumb-contact {
+      margin-bottom: 23px; } }
 
 .footer {
   padding: 50px 0 10px;

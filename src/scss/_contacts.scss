@@ -5,6 +5,12 @@
   .title-block {
     line-height: $line-height-base + 26px;
     margin-bottom: 70px;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base + 3;
+      line-height: $line-height-base - 8;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -13,23 +19,46 @@
   border-radius: 5px;
   margin-bottom: 60px;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 6px;
+  }
+
   iframe {
     width: 100% !important;
+
+    @include breakpoint($mobile) {
+      height: 128px;
+    }
   }
 }
 
 .contact-area {
   margin-bottom: 70px;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 5px;
+  }
+
   .title-block {
     line-height: $line-height-base + 26px;
     margin-bottom: 32px;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base + 3;
+      line-height: $line-height-base + 2;
+      margin-bottom: 0;
+    }
   }
 
   address {
     display: inline-block;
     line-height: $line-height-base + 19;
     margin-bottom: 3px;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 5;
+      line-height: $line-height-base;
+    }
 
     &:hover {
       text-decoration: underline;
@@ -40,28 +69,59 @@
     font-weight: 500;
     margin-bottom: 8px;
 
-    a,
-    i {
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 5;
+      line-height: $line-height-base;
+    }
+
+    a {
       font-size: $font-size-base + 3;
       line-height: $line-height-base + 19;
       font-weight: 400;
       font-style: normal;
-    }
-
-    i {
-      padding-left: 30px;
-    }
-
-    a {
       padding-left: 30px;
 
-      &:hover {
-        text-decoration: underline;
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 5;
+        line-height: $line-height-base;
+        padding-left: 5px;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
+    }
+  }
+}
+
+.schedule {
+  display: flex;
+
+  p {
+    &:last-child {
+      padding-left: 30px;
+
+      @include breakpoint($mobile) {
+        padding-left: 5px;
+      }
+    }
+  }
+
+  span {
+    @include breakpoint($mobile) {
+      display: block;
     }
   }
 }
 
 .breadcrumb-contact {
   margin-bottom: 70px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 30px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 23px;
+  }
 }
