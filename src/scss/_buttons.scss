@@ -203,3 +203,21 @@
     background-repeat: no-repeat;
   }
 }
+
+.btn-search {
+  padding: 7px;
+  background: $transparent;
+  border-radius: 5px;
+
+  &:hover {
+    background: $alabaster;
+
+    i {
+      color: $black;
+    }
+  }
+  i {
+    color: $cotton-seed;
+    font-size: $font-size-base + 23;
+  }
+}
