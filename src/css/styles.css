@@ -1257,9 +1257,12 @@ h6 {
   max-width: 740px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  overflow: hidden;
   border: 1px solid #bcbab6;
   position: relative; }
+  @media only screen and (max-width: 1210px) {
+    .slider-wrap {
+      max-width: 470px;
+      height: 335px; } }
   .slider-wrap .prev,
   .slider-wrap .next {
     display: block !important;
@@ -1286,6 +1289,9 @@ h6 {
 .card-product-slide .slider-item {
   padding: 37px 90px;
   position: relative; }
+  @media only screen and (max-width: 1210px) {
+    .card-product-slide .slider-item {
+      padding: 17px 60px; } }
 
 .card-product-slide .btn-search {
   position: absolute;
@@ -1446,10 +1452,16 @@ h6 {
 
 .new-items .slick-slide {
   padding: 0 18px; }
+  @media only screen and (max-width: 1210px) {
+    .new-items .slick-slide {
+      padding: 0 5px; } }
 
 .new-items .slick-list {
   margin: 0 20px;
   padding: 20px 0; }
+  @media only screen and (max-width: 1210px) {
+    .new-items .slick-list {
+      margin: 0 30px; } }
 
 .new-items-block {
   margin-bottom: 55px; }

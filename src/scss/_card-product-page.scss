@@ -11,9 +11,13 @@
   max-width: 740px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  overflow: hidden;
   border: 1px solid $cotton-seed;
   position: relative;
+
+  @include breakpoint($desktop) {
+    max-width: 470px;
+    height: 335px;
+  }
 
   .prev,
   .next {
@@ -50,6 +54,10 @@
   .slider-item {
     padding: 37px 90px;
     position: relative;
+
+    @include breakpoint($desktop) {
+      padding: 17px 60px;
+    }
   }
 
   .btn-search {
@@ -267,11 +275,19 @@
 
   .slick-slide {
     padding: 0 18px;
+
+    @include breakpoint($desktop) {
+      padding: 0 5px;
+    }
   }
 
   .slick-list {
     margin: 0 20px;
     padding: 20px 0;
+
+    @include breakpoint($desktop) {
+      margin: 0 30px;
+    }
   }
 }
 
