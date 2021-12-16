@@ -79,7 +79,7 @@ $('.new-items').slick({
         {
             breakpoint: 767,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
         },

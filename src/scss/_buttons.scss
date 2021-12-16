@@ -219,5 +219,9 @@
   i {
     color: $cotton-seed;
     font-size: $font-size-base + 23;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base + 3;
+    }
   }
 }
