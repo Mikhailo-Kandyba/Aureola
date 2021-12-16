@@ -64,7 +64,6 @@
     z-index: 25;
     top: 0;
     right: 200%;
-    //width: 100%;
     transition: all .25s ease;
     min-width: 230px;
   }
@@ -78,7 +77,6 @@
     @include breakpoint($mobile) {
       display: block;
       background: $white;
-      //min-height: 100vh;
       min-width: inherit;
       padding: 50px 30px;
       border-radius: 5px;
