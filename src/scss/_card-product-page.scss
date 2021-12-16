@@ -5,6 +5,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .slider-wrap {
@@ -17,6 +21,12 @@
   @include breakpoint($desktop) {
     max-width: 470px;
     height: 335px;
+  }
+
+  @include breakpoint($tablet) {
+    max-width: 400px;
+    height: 305px;
+    margin-right: 10px;
   }
 
   .prev,
@@ -36,6 +46,19 @@
     left: 0;
     top: 50%;
     transform: translate(0, -50%);
+    padding: 35px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("../images/btn-slider-left.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .next {
@@ -43,6 +66,20 @@
     right: 0;
     top: 50%;
     transform: translate(0, -50%);
+    padding: 35px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("../images/btn-slider-right.svg");
+      background-repeat: no-repeat;
+    }
+
   }
 }
 
@@ -57,6 +94,10 @@
 
     @include breakpoint($desktop) {
       padding: 17px 60px;
+    }
+
+    @include breakpoint($tablet) {
+      padding: 17px 30px;
     }
   }
 
@@ -116,6 +157,10 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 65px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 30px;
+  }
 
   h3 {
     font-family: $font-Poiret-One;
@@ -190,7 +235,7 @@
   margin-left: -11px;
 
   @include breakpoint($tablet) {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   @include breakpoint($mobile) {
@@ -225,6 +270,12 @@
 .tab-content {
   p {
     margin-bottom: 22px;
+  }
+}
+
+.ui-state-active {
+  .ui-tabs-anchor {
+    color: $black;
   }
 }
 
@@ -286,13 +337,17 @@
     padding: 20px 0;
 
     @include breakpoint($desktop) {
-      margin: 0 30px;
+      margin: 0 35px;
     }
   }
 }
 
 .new-items-block {
   margin-bottom: 55px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .new-items-wrap {
@@ -302,12 +357,12 @@
   .slick-arrow {
     display: block !important;
     background: $transparent;
+    padding: 5px;
   }
 
 
   .prev,
   .next {
-    padding: 10px 12px 4px;
     background: $transparent !important;
     border-radius: 5px;
 
