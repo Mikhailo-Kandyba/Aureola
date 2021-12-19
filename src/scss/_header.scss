@@ -3,7 +3,10 @@
 
 .header {
   padding: 17px 0;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 
   @include breakpoint($mobile) {
     padding: 14px 0;
@@ -44,14 +47,14 @@
 .btn-list {
   flex-wrap: wrap;
   margin-bottom: 8px;
-  min-width: 155px;
+  min-width: 145px;
 
   @include breakpoint($mobile) {
     display: none !important;
   }
 
   li {
-    margin-left: 8px;
+    margin-left: 13px;
   }
 }
 
@@ -61,74 +64,65 @@
 
   @include breakpoint($mobile) {
     position: fixed;
-    z-index: 25;
     top: 0;
     right: 200%;
     transition: all .25s ease;
     min-width: 230px;
   }
+}
 
-  .menu-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.menu-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include breakpoint($mobile) {
+    display: block;
+    background: $white;
+    min-width: inherit;
+    padding: 50px 30px;
+    border-radius: 5px;
+  }
+
+  li {
+    @include breakpoint($mobile) {
+      font-size: $font-size-base + 3;
+      line-height: $line-height-base + 5;
+    }
+  }
+
+  a {
+    padding: 5px 10px;
+    color: $black;
+
+    @include breakpoint($mobile) {
+      color: $cotton-seed;
+    }
+
+    &:hover {
+      color: $emperor;
+    }
 
     @include breakpoint($mobile) {
       display: block;
-      background: $white;
-      min-width: inherit;
-      padding: 50px 30px;
-      border-radius: 5px;
     }
+  }
 
-    li {
-      font-family: $base-font-default;
-      font-size: $font-size-base;
-      line-height: $line-height-base;
-
-      @include breakpoint($mobile) {
-        font-size: $font-size-base + 3;
-        line-height: $line-height-base + 5;
-      }
-
-      a {
-        display: block;
-        padding: 5px 10px;
-        color: $black;
-
-        @include breakpoint($mobile) {
-          color: $cotton-seed;
-        }
-
-        &:hover {
-          text-decoration: underline;
-
-          @include breakpoint($mobile) {
-            color: $emperor;
-          }
-        }
-
-        @include breakpoint($mobile) {
-          display: block;
-        }
-      }
+  .btn-mobile {
+    display: none !important;
+    @include breakpoint($mobile) {
+      display: flex !important;
     }
+  }
 
-    .btn-mobile {
-      display: none !important;
-      @include breakpoint($mobile) {
-        display: flex !important;
-      }
-    }
-
-    .justify-content-end {
-      @include breakpoint($mobile) {
-        justify-content: flex-start !important;
-      }
+  .justify-content-end {
+    @include breakpoint($mobile) {
+      justify-content: flex-start !important;
     }
   }
 }
+
 
 .show-menu {
   @include breakpoint($mobile) {
@@ -216,9 +210,6 @@
 
 .dropdown-item.active,
 .dropdown-item {
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-
   &:active {
     background: $transparent;
   }
@@ -226,6 +217,15 @@
 
 .dropdown-menu {
   min-width: 100%;
+
+  a {
+    display: block;
+
+    &:hover {
+      background: $porcelain;
+      color: $black;
+    }
+  }
 }
 
 .form-control {

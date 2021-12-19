@@ -9,23 +9,19 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: -107px;
   padding: 130px 0 15px;
   margin-bottom: 35px;
   position: relative;
 
   @include breakpoint($desktop) {
-    margin-top: -120px;
     padding: 80px 0 15px;
   }
 
   @include breakpoint($tablet) {
-    margin-top: -190px;
-    padding: 160px 0 15px;
+    padding: 195px 0 15px;
   }
 
   @include breakpoint($mobile) {
-    margin-top: -80px;
     padding: 65px 0 15px;
     min-height: 130px;
     margin-bottom: 10px;
@@ -42,35 +38,68 @@
   }
 }
 
-.site-navigation {
+.aside-bar {
   background: $porcelain-average;
   border-radius: 5px;
-  max-width: 330px;
-  width: 100%;
   height: fit-content;
-  padding: 30px 40px 30px 30px;
-  margin-right: 10px;
+  padding: 35px 40px 30px 30px;
 
   @include breakpoint($desktop) {
-    max-width: 260px;
     padding: 20px;
   }
 
   @include breakpoint($tablet) {
-    max-width: 235px;
     padding: 10px;
   }
 
   @include breakpoint($mobile) {
-    max-width: 100%;
+    width: 100%;
     padding: 22px 30px;
     margin-right: 0;
     margin-bottom: 35px;
   }
 
-  li {
-    color: $emperor;
-    margin-bottom: 4px;
+  .accordion {
+    width: 260px;
+
+    @include breakpoint($desktop) {
+      width: 235px;
+    }
+
+    @include breakpoint($tablet) {
+      width: 215px;
+    }
+
+    @include breakpoint($mobile) {
+      width: 100%;
+    }
+  }
+
+  .accordion-item {
+    box-shadow: none;
+    margin-bottom: 10px;
+  }
+
+  .accordion-button {
+    background: $porcelain-average;
+    padding: 7px 5px;
+
+    &:hover {
+      background: $porcelain;
+    }
+
+    &:after {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .accordion-button:not(.collapsed):after {
+    transform: rotate(0deg);
+  }
+
+  .accordion-body {
+    padding: 11px 0 0 14px;
+    background: $porcelain-average;
   }
 
   a {
@@ -84,17 +113,6 @@
       background: $porcelain;
     }
 
-    &:after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translate(0, -50%);
-      width: 17px;
-      height: 18px;
-      background-image: url("../images/arrow-site-navigation.svg");
-      background-repeat: no-repeat;
-    }
   }
 }
 
@@ -129,6 +147,7 @@
     font-size: $font-size-base - 5;
     line-height: $line-height-base - 8;
   }
+
   a {
     display: block;
     padding: 0 11px;
@@ -180,14 +199,20 @@
 }
 
 .catalog-content {
-  max-width: 910px;
+  margin-left: 35px;
 
-  .breadcrumb {
-    margin-left: 40px;
-    margin-bottom: 47px;
+  @include breakpoint($desktop) {
+    margin-left: 20px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-left: 0;
+  }
+
+  .breadcrumb-area {
+    margin-bottom: 45px;
 
     @include breakpoint($tablet) {
-      margin-left: 10px;
       margin-bottom: 15px;
     }
   }
@@ -195,19 +220,30 @@
 
 .catalog-page {
   margin-bottom: 15px;
+  margin: 0 -15px;
+
+  @include breakpoint($desktop) {
+    margin: 0 -5px;
+  }
 
   li {
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-    max-width: 285px;
+    padding: 0 15px;
 
     @include breakpoint($desktop) {
-      max-width: 235px;
+      padding: 0 5px;
+    }
+
+    @include breakpoint($tablet) {
+      width: 50%;
     }
 
     @include breakpoint($mobile) {
-      max-width: 100%;
-      margin: 0 0 20px;
+      width: 100%;
     }
+  }
+
+  .catalog-item {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 
     &:hover {
       box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
@@ -245,7 +281,7 @@
   color: $transparent;
   background-color: $transparent;
   border-color: $transparent;
-  padding: 37px 0;
+  padding: 35px 0;
 
   @include breakpoint($tablet) {
     padding: 5px 0;

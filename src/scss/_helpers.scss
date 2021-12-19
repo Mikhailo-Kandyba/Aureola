@@ -2,18 +2,11 @@
 @import "variables";
 
 .z-index-20 {
-  position: relative;
   z-index: 20;
 }
 
 .z-index-50 {
-  position: relative;
   z-index: 50;
-}
-
-.z-index-1 {
-  position: relative;
-  z-index: -1;
 }
 
 .decor-text {
@@ -25,6 +18,7 @@
   line-height: $line-height-base + 97;
   color: $alabaster;
   letter-spacing: 4px;
+  z-index: -1;
 
   @include breakpoint($tablet) {
     letter-spacing: 0;
@@ -71,7 +65,50 @@
 }
 
 .background {
-  background: black;
+  @include breakpoint($mobile) {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(196, 196, 196, 0.7);
+      z-index: 40;
+    }
+  }
+
+  .logo {
+    @include breakpoint($mobile) {
+      z-index: -1;
+    }
+  }
+
+  .input-group {
+    @include breakpoint($mobile) {
+      z-index: -1;
+    }
+  }
 }
+
+.padding-top-150 {
+  padding-top: 150px;
+
+  @include breakpoint($tablet) {
+    padding-top: 180px;
+  }
+
+  @include breakpoint($mobile) {
+    padding-top: 60px;
+  }
+}
+
+
+
+
+
+
 
 

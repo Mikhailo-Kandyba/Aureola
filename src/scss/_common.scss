@@ -10,19 +10,16 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-top: -125px;
-  padding-top: 200px;
+  padding-top: 160px;
   margin-bottom: 75px;
 
   @include breakpoint($tablet) {
-    margin-top: -240px;
     padding-top: 210px;
     padding-bottom: 20px;
     margin-bottom: 40px;
   }
 
   @include breakpoint($mobile) {
-    margin-top: -100px;
     padding-top: 90px;
     min-height: 375px;
     padding-bottom: 10px;
@@ -37,6 +34,14 @@
     left: 0;
     bottom: 0;
     background: rgba(255, 255, 255, 0.45);
+  }
+
+  .slick-list {
+    margin-bottom: 140px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -65,7 +70,6 @@
   font-family: $font-Poiret-One;
   font-size: $font-size-base + 47;
   line-height: $line-height-base +38;
-  font-weight: 400;
   margin-bottom: 50px;
 
   @include breakpoint($mobile) {
@@ -83,15 +87,6 @@
 .slick-dots {
   display: flex;
   justify-content: center;
-  margin-top: 140px;
-
-  @include breakpoint($tablet) {
-    margin-top: 40px;
-  }
-
-  @include breakpoint($mobile) {
-    margin-top: 5px;
-  }
 
   .slick-active {
     button {
@@ -124,7 +119,6 @@
   font-family: $font-Poiret-One;
   font-size: $font-size-base + 19;
   line-height: $line-height-base + 37;
-  font-weight: 400;
   margin-bottom: 30px;
   letter-spacing: 1px;
 
@@ -162,6 +156,7 @@
     flex-direction: column;
     align-items: center;
   }
+
   .img-area {
     display: flex;
     overflow: hidden;
@@ -200,31 +195,30 @@
       width: 100%;
       padding: 0 30px;
     }
+  }
 
-    h3 {
-      font-family: $font-Poiret-One;
-      font-size: $font-size-base + 19;
-      line-height: $line-height-base + 15;
-      font-weight: 400;
-      margin-bottom: 24px;
+  h3 {
+    font-family: $font-Poiret-One;
+    font-size: $font-size-base + 19;
+    line-height: $line-height-base + 15;
+    margin-bottom: 24px;
 
-      @include breakpoint($tablet) {
-        margin-bottom: 10px;
-      }
-
-      @include breakpoint($mobile) {
-        font-size: $font-size-base + 3;
-        line-height: $line-height-base - 4;
-      }
+    @include breakpoint($tablet) {
+      margin-bottom: 10px;
     }
 
-    p {
-      color: $emperor;
+    @include breakpoint($mobile) {
+      font-size: $font-size-base + 3;
+      line-height: $line-height-base - 4;
+    }
+  }
 
-      @include breakpoint($mobile) {
-        font-size: $font-size-base - 5;
-        line-height: $line-height-base - 8;
-      }
+  p {
+    color: $emperor;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 5;
+      line-height: $line-height-base - 8;
     }
   }
 }
@@ -234,9 +228,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 1295px;
   position: relative;
-  padding: 20px 0;
+  padding: 20px 0 40px;
   margin-bottom: 30px;
 
   @include breakpoint($mobile) {
@@ -260,30 +253,29 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 -5px;
+  margin: 0 -30px 20px;
+
+  @include breakpoint($desktop) {
+    margin: 0 -5px;
+  }
 
   li {
-    max-width: 378px;
-    border-radius: 5px;
-    background: $white;
-    margin: 0 5px 32px;
+    width: 33.3%;
+    padding: 0 30px;
+    margin-bottom: 32px;
 
     @include breakpoint($desktop) {
-      max-width: 330px;
-    }
-
-    @include breakpoint($tablet) {
-      max-width: 350px;
+      padding: 0 3px;
     }
 
     @include breakpoint($mobile) {
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 100%;
       width: 100%;
       text-align: center;
       margin-bottom: 20px;
+      padding: 0 27px;
 
       &:nth-child(4),
       &:nth-child(5),
@@ -294,10 +286,7 @@
   }
 
   .img-area {
-    margin-bottom: 10px;
-
     @include breakpoint($mobile) {
-      max-width: 163px;
       margin-bottom: 3px;
     }
 
@@ -322,7 +311,6 @@
       font-size: $font-size-base + 19;
       line-height: $line-height-base + 15;
       margin-bottom: 13px;
-      font-weight: 400;
 
       @include breakpoint($mobile) {
         font-size: $font-size-base + 3;
@@ -339,10 +327,6 @@
         line-height: $line-height-base - 8;
       }
     }
-
-    .btn-link {
-      font-weight: 500;
-    }
   }
 
   .vendor-code {
@@ -355,6 +339,22 @@
       margin-bottom: 0;
     }
   }
+
+  .btn-link {
+    font-weight: 500;
+    color: $emperor;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.catalog-item {
+  background: $white;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .social-networks-wrap {
@@ -421,14 +421,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 450px;
   padding: 25px 0 16px;
   margin-bottom: 30px;
   position: relative;
 
   @include breakpoint($mobile) {
     padding: 15px 0;
-    min-height: 240px;
     margin-bottom: 35px;
   }
 
@@ -453,12 +451,16 @@
   @include breakpoint($mobile) {
     margin-bottom: 11px;
   }
+
+  .accordion-body {
+    padding: 0 42px;
+  }
 }
 
 .accordion-button{
   font-size: $font-size-base;
   line-height: $line-height-base;
-  padding: 30px 42px;
+  padding: 25px 42px;
   border-radius: 5px;
 
   @include breakpoint($mobile) {
@@ -517,16 +519,16 @@
 }
 
 .items-text {
-  overflow: hidden;
+  //overflow: hidden;
   position: relative;
-  height: 172px;
+  //height: 172px;
   line-height: $line-height-base + 8px;
   margin-bottom: 26px;
 
   @include breakpoint($mobile) {
     font-size: $font-size-base - 5;
     line-height: $line-height-base - 2;
-    height: 308px;
+    //height: 308px;
   }
 
   &:after {
@@ -547,7 +549,7 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 597px;
-  padding: 25px 0;
+  padding: 17px 0;
   position: relative;
   margin-bottom: 72px;
 
@@ -579,6 +581,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   .title-block {
     @include breakpoint($mobile) {
@@ -590,7 +593,6 @@
 .user-form {
   max-width: 540px;
   width: 100%;
-  margin-bottom: 20px;
 
   @include breakpoint($tablet) {
     margin-bottom: 0;
@@ -611,7 +613,7 @@
     line-height: $line-height-base - 11;
     background: $transparent;
     border-radius: 5px;
-    padding: 31px 30px;
+    padding: 15px 30px;
     border: 1px solid $emperor;
 
     @include breakpoint($mobile) {
@@ -665,6 +667,18 @@
       }
     }
   }
+
+  .btn-general {
+    color: $emperor;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.holder-btn {
+  padding-top: 20px;
 }
 
 

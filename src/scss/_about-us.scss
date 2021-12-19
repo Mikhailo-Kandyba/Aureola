@@ -67,14 +67,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 410px;
-  padding: 20px 0;
+  padding: 65px 0 120px;
   position: relative;
   margin-bottom: 70px;
 
+  @include breakpoint($tablet) {
+    padding: 35px 0 60px;
+  }
+
   @include breakpoint($mobile) {
     padding: 10px 0;
-    min-height: 100px;
     margin-bottom: 20px;
   }
 

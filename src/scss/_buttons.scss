@@ -51,7 +51,6 @@
 }
 
 .btn-icon {
-  margin: 0 5px;
   padding: 3px;
   background: $transparent;
 
@@ -138,14 +137,6 @@
   }
 }
 
-.btn-emperor {
-  color: $emperor;
-
-  &:hover {
-    color: $black;
-  }
-}
-
 .btn-outline-secondary {
   border: none;
   border-bottom: 1px solid $emperor !important;
@@ -210,8 +201,6 @@
   border-radius: 5px;
 
   &:hover {
-    background: $alabaster;
-
     i {
       color: $black;
     }

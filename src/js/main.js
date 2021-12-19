@@ -4,21 +4,16 @@ $(".btn-menu").on('click', function(e) {
     $(this).toggleClass("active");
     $(".menu-navigation-wrap").toggleClass('show-menu');
     $("body").toggleClass('overflow-hidden');
-});
-
-$('.menu-navigation-wrap a').click(function(){
-    $('.btn-menu').removeClass("active");
-    $(".menu-navigation-wrap").removeClass('show-menu');
-    $("body").removeClass('overflow-hidden');
+    $("body").toggleClass('background');
 });
 
 $('.slider').slick({
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 10000,
     pauseOnHover: true,
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 500,
     slidesToShow: 1,
     adaptiveHeight: true,
 });
