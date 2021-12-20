@@ -108,7 +108,7 @@
 
   @include breakpoint($mobile) {
     font-size: $font-size-base - 9;
-    line-height: $line-height-base - 9;
+    line-height: $line-height-base - 14;
   }
 
   a {

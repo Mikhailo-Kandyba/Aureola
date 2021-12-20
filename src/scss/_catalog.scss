@@ -78,11 +78,20 @@
   .accordion-item {
     box-shadow: none;
     margin-bottom: 10px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 5px;
+    }
   }
 
   .accordion-button {
     background: $porcelain-average;
     padding: 7px 5px;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+    }
 
     &:hover {
       background: $porcelain;
@@ -100,6 +109,11 @@
   .accordion-body {
     padding: 11px 0 0 14px;
     background: $porcelain-average;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+    }
   }
 
   a {
@@ -430,6 +444,7 @@
 
 .page-link {
   font-weight: 500;
+  font-size: $font-size-base + 3;
   line-height: $line-height-base - 3;
   color: $cotton-seed;
   border: none;
