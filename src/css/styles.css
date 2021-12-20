@@ -178,7 +178,7 @@ h6 {
   position: relative;
   font-size: 20px;
   line-height: 25px;
-  padding: 20px 80px 20px 0;
+  padding: 30px 80px 30px 0;
   text-decoration: none;
   color: #000; }
   @media only screen and (max-width: 767px) {
@@ -261,6 +261,250 @@ h6 {
     @media only screen and (max-width: 767px) {
       .btn-search i {
         font-size: 20px; } }
+
+.round-text {
+  font-family: "Poiret One", cursive;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  width: 71px;
+  height: 78px;
+  font-size: 12px;
+  line-height: 15px;
+  z-index: -1; }
+  @media only screen and (max-width: 767px) {
+    .round-text {
+      font-size: 7px;
+      line-height: 9px;
+      width: 60px;
+      height: 65px; } }
+  .round-text:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    width: 40px;
+    height: 9px;
+    transform: translate(0, -50%);
+    background-image: url("../images/pointer-btn.svg");
+    background-repeat: no-repeat; }
+    @media only screen and (max-width: 767px) {
+      .round-text:before {
+        background-image: url("../images/pointer-btn-mobile.svg"); } }
+  .round-text span {
+    position: absolute; }
+  .round-text .w1 {
+    top: 20px;
+    left: 0;
+    transform: rotate(125deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w1 {
+        top: 18px;
+        left: 1px; } }
+  .round-text .w2 {
+    top: 13px;
+    left: 4px;
+    transform: rotate(125deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w2 {
+        top: 13px;
+        left: 4px; } }
+  .round-text .w3 {
+    top: 8px;
+    left: 9px;
+    transform: rotate(126deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w3 {
+        top: 7px;
+        left: 9px; } }
+  .round-text .w4 {
+    top: 4px;
+    left: 12px;
+    transform: rotate(154deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w4 {
+        top: 4px;
+        left: 15px; } }
+  .round-text .w5 {
+    top: 1px;
+    left: 19px;
+    transform: rotate(194deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w5 {
+        top: 2px;
+        left: 21px; } }
+  .round-text .w6 {
+    top: 0;
+    left: 26px;
+    transform: rotate(180deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w6 {
+        top: 2px; } }
+  .round-text .w7 {
+    top: 0;
+    left: 33px;
+    transform: rotate(188deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w7 {
+        top: 4px; } }
+  .round-text .w8 {
+    top: 0;
+    left: 39px;
+    transform: rotate(218deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w8 {
+        top: 4px;
+        left: 38px; } }
+  .round-text .w9 {
+    top: 4px;
+    left: 47px;
+    transform: rotate(229deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w9 {
+        top: 9px;
+        left: 43px; } }
+  .round-text .w10 {
+    top: 9px;
+    left: 54px;
+    transform: rotate(-140deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w10 {
+        top: 15px;
+        left: 47px; } }
+  .round-text .w11 {
+    top: 15px;
+    left: 59px;
+    transform: rotate(-120deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w11 {
+        top: 21px;
+        left: 49px; } }
+  .round-text .w12 {
+    top: 21px;
+    right: 4px;
+    transform: rotate(-111deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w12 {
+        top: 25px;
+        right: 7px; } }
+  .round-text .w13 {
+    top: 28px;
+    right: 1px;
+    transform: rotate(-107deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w13 {
+        top: 29px;
+        right: 6px; } }
+  .round-text .w14 {
+    top: 33px;
+    right: 3px;
+    transform: rotate(-88deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w14 {
+        top: 33px;
+        right: 8px; } }
+  .round-text .w15 {
+    top: 40px;
+    right: 3px;
+    transform: rotate(-82deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w15 {
+        top: 37px;
+        right: 9px; } }
+  .round-text .w16 {
+    top: 47px;
+    right: 5px;
+    transform: rotate(-59deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w16 {
+        top: 40px;
+        right: 12px; } }
+  .round-text .w17 {
+    top: 55px;
+    right: 11px;
+    transform: rotate(-44deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w17 {
+        top: 45px;
+        right: 17px; } }
+  .round-text .w18 {
+    bottom: 3px;
+    right: 17px;
+    transform: rotate(-31deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w18 {
+        bottom: 9px;
+        right: 22px; } }
+  .round-text .w19 {
+    bottom: 1px;
+    right: 23px;
+    transform: rotate(-27deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w19 {
+        bottom: 7px;
+        right: 26px; } }
+  .round-text .w20 {
+    bottom: 0;
+    right: 31px;
+    transform: rotate(-6deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w20 {
+        bottom: 7px;
+        right: 31px; } }
+  .round-text .w21 {
+    bottom: 0;
+    right: 38px;
+    transform: rotate(2deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w21 {
+        bottom: 7px;
+        right: 37px; } }
+  .round-text .w22 {
+    bottom: 1px;
+    right: 44px;
+    transform: rotate(23deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w22 {
+        bottom: 8px;
+        right: 41px; } }
+  .round-text .w23 {
+    bottom: 2px;
+    right: 49px;
+    transform: rotate(73deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w23 {
+        bottom: 10px;
+        right: 45px; } }
+  .round-text .w24 {
+    bottom: 7px;
+    left: 11px;
+    transform: rotate(48deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w24 {
+        bottom: 14px;
+        left: 8px; } }
+  .round-text .w25 {
+    bottom: 13px;
+    left: 0;
+    transform: rotate(50deg); }
+    @media only screen and (max-width: 767px) {
+      .round-text .w25 {
+        bottom: 18px;
+        left: 0;
+        transform: rotate(70deg); } }
+
+.btn-wrap {
+  display: flex; }
+
+.after-none:after {
+  display: none; }
+
+.btn-xl {
+  padding: 30px 135px 30px 0; }
+  @media only screen and (max-width: 767px) {
+    .btn-xl {
+      padding: 30px 75px 30px 0; } }
 
 .header {
   padding: 17px 0;
@@ -468,7 +712,7 @@ h6 {
     bottom: 0;
     background: rgba(255, 255, 255, 0.45); }
   .home-banner .slick-list {
-    margin-bottom: 140px; }
+    margin-bottom: 120px; }
     @media only screen and (max-width: 1023px) {
       .home-banner .slick-list {
         margin-bottom: 50px; } }

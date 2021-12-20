@@ -106,7 +106,7 @@
   position: relative;
   font-size: $font-size-base + 3;
   line-height: $line-height-base - 3;
-  padding: 20px 80px 20px 0;
+  padding: 30px 80px 30px 0;
   text-decoration: none;
   color: $black;
 
@@ -214,3 +214,337 @@
     }
   }
 }
+
+.round-text {
+  font-family: $font-Poiret-One;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  width: 71px;
+  height: 78px;
+  //background: antiquewhite;
+  font-size: 12px;
+  line-height: 15px;
+  z-index: -1;
+
+  @include breakpoint($mobile) {
+    font-size: 7px;
+    line-height: 9px;
+    width: 60px;
+    height: 65px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    width: 40px;
+    height: 9px;
+    transform: translate(0, -50%);
+    background-image: url("../images/pointer-btn.svg");
+    background-repeat: no-repeat;
+
+    @include breakpoint($mobile) {
+      background-image: url("../images/pointer-btn-mobile.svg");
+    }
+  }
+
+  span {
+    position: absolute;
+  }
+
+  .w1 {
+    top: 20px;
+    left: 0;
+    transform: rotate(125deg);
+
+    @include breakpoint($mobile) {
+      top: 18px;
+      left: 1px;
+    }
+  }
+
+  .w2 {
+    top: 13px;
+    left: 4px;
+    transform: rotate(125deg);
+
+    @include breakpoint($mobile) {
+      top: 13px;
+      left: 4px;
+    }
+  }
+
+  .w3 {
+    top: 8px;
+    left: 9px;
+    transform: rotate(126deg);
+
+    @include breakpoint($mobile) {
+      top: 7px;
+      left: 9px;
+    }
+  }
+  .w4 {
+    top: 4px;
+    left: 12px;
+    transform: rotate(154deg);
+
+    @include breakpoint($mobile) {
+      top: 4px;
+      left: 15px;
+    }
+  }
+
+  .w5 {
+    top: 1px;
+    left: 19px;
+    transform: rotate(194deg);
+
+    @include breakpoint($mobile) {
+      top: 2px;
+      left: 21px;
+    }
+  }
+
+  .w6 {
+    top: 0;
+    left: 26px;
+    transform: rotate(180deg);
+
+    @include breakpoint($mobile) {
+      top: 2px;
+    }
+  }
+
+  .w7 {
+    top: 0;
+    left: 33px;
+    transform: rotate(188deg);
+
+    @include breakpoint($mobile) {
+      top: 4px;
+    }
+  }
+
+  .w8 {
+    top: 0;
+    left: 39px;
+    transform: rotate(218deg);
+
+    @include breakpoint($mobile) {
+      top: 4px;
+      left: 38px;
+    }
+  }
+
+  .w9 {
+    top: 4px;
+    left: 47px;
+    transform: rotate(229deg);
+
+    @include breakpoint($mobile) {
+      top: 9px;
+      left: 43px;
+    }
+  }
+
+  .w10 {
+    top: 9px;
+    left: 54px;
+    transform: rotate(-140deg);
+
+    @include breakpoint($mobile) {
+      top: 15px;
+      left: 47px;
+    }
+  }
+
+  .w11 {
+    top: 15px;
+    left: 59px;
+    transform: rotate(-120deg);
+
+    @include breakpoint($mobile) {
+      top: 21px;
+      left: 49px;
+    }
+  }
+
+  .w12 {
+    top: 21px;
+    right: 4px;
+    transform: rotate(-111deg);
+
+    @include breakpoint($mobile) {
+      top: 25px;
+      right: 7px;
+    }
+  }
+
+  .w13 {
+    top: 28px;
+    right: 1px;
+    transform: rotate(-107deg);
+
+    @include breakpoint($mobile) {
+      top: 29px;
+      right: 6px;
+    }
+  }
+  .w14 {
+    top: 33px;
+    right: 3px;
+    transform: rotate(-88deg);
+
+    @include breakpoint($mobile) {
+      top: 33px;
+      right: 8px;
+    }
+  }
+
+  .w15 {
+    top: 40px;
+    right: 3px;
+    transform: rotate(-82deg);
+
+    @include breakpoint($mobile) {
+      top: 37px;
+      right: 9px;
+    }
+  }
+
+  .w16 {
+    top: 47px;
+    right: 5px;
+    transform: rotate(-59deg);
+
+    @include breakpoint($mobile) {
+      top: 40px;
+      right: 12px;
+    }
+  }
+  .w17 {
+    top: 55px;
+    right: 11px;
+    transform: rotate(-44deg);
+
+    @include breakpoint($mobile) {
+      top: 45px;
+      right: 17px;
+    }
+  }
+
+  .w18 {
+    bottom: 3px;
+    right: 17px;
+    transform: rotate(-31deg);
+
+    @include breakpoint($mobile) {
+      bottom: 9px;
+      right: 22px;
+    }
+  }
+
+  .w19 {
+    bottom: 1px;
+    right: 23px;
+    transform: rotate(-27deg);
+
+    @include breakpoint($mobile) {
+      bottom: 7px;
+      right: 26px;
+    }
+  }
+  .w20 {
+    bottom: 0;
+    right: 31px;
+    transform: rotate(-6deg);
+
+    @include breakpoint($mobile) {
+      bottom: 7px;
+      right: 31px;
+    }
+  }
+
+  .w21 {
+    bottom: 0;
+    right: 38px;
+    transform: rotate(2deg);
+
+    @include breakpoint($mobile) {
+      bottom: 7px;
+      right: 37px;
+    }
+  }
+
+  .w22 {
+    bottom: 1px;
+    right: 44px;
+    transform: rotate(23deg);
+
+    @include breakpoint($mobile) {
+      bottom: 8px;
+      right: 41px;
+    }
+  }
+
+  .w23 {
+    bottom: 2px;
+    right: 49px;
+    transform: rotate(73deg);
+
+    @include breakpoint($mobile) {
+      bottom: 10px;
+      right: 45px;
+    }
+
+
+  }
+
+  .w24 {
+    bottom: 7px;
+    left: 11px;
+    transform: rotate(48deg);
+
+    @include breakpoint($mobile) {
+      bottom: 14px;
+      left: 8px;
+    }
+  }
+
+  .w25 {
+    bottom: 13px;
+    left: 0;
+    transform: rotate(50deg);
+
+    @include breakpoint($mobile) {
+      bottom: 18px;
+      left: 0;
+      transform: rotate(70deg);
+    }
+
+  }
+}
+
+.btn-wrap {
+  display: flex;
+}
+
+.after-none {
+  &:after {
+    display: none;
+  }
+}
+
+.btn-xl {
+  padding: 30px 135px 30px 0;
+
+  @include breakpoint($mobile) {
+    padding: 30px 75px 30px 0;
+  }
+}
+
+
