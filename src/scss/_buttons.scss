@@ -132,6 +132,7 @@
     background-repeat: no-repeat;
 
     @include breakpoint($mobile) {
+      height: 5px;
       background-image: url("../images/pointer-btn-mobile.svg");
     }
   }
@@ -223,7 +224,6 @@
   transform: translate(0, -50%);
   width: 71px;
   height: 78px;
-  //background: antiquewhite;
   font-size: 12px;
   line-height: 15px;
   z-index: -1;
