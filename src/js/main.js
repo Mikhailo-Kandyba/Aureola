@@ -8,8 +8,8 @@ $(".btn-menu").on('click', function(e) {
 });
 
 $('.slider').slick({
-    // autoplay: true,
-    // autoplaySpeed: 10000,
+    autoplay: true,
+    autoplaySpeed: 8000,
     pauseOnHover: true,
     dots: true,
     infinite: true,
