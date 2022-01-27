@@ -102,6 +102,9 @@ h6 {
     .container-xxl {
       padding: 0 10px; } }
 
+.dropdown {
+  display: flex; }
+
 .btn-secondary {
   font-size: 17px;
   line-height: 28px;
@@ -118,6 +121,8 @@ h6 {
     color: #000;
     background-color: transparent;
     border: none; }
+    .btn-secondary:hover:before {
+      filter: contrast(220%); }
     @media only screen and (max-width: 767px) {
       .btn-secondary:hover {
         color: #565353; } }
@@ -134,8 +139,8 @@ h6 {
     width: 10px;
     height: 10px;
     top: 50%;
-    transform: translate(0, -50%);
-    right: 0;
+    right: 50%;
+    transform: translate(-50%, -50%);
     background-image: url("../images/arrow-down.svg");
     background-repeat: no-repeat; }
 
@@ -661,7 +666,7 @@ h6 {
   background: transparent; }
 
 .dropdown-menu {
-  min-width: 100%; }
+  width: max-content; }
   .dropdown-menu a {
     display: block; }
     .dropdown-menu a:hover {
@@ -682,7 +687,8 @@ h6 {
     border-color: transparent;
     box-shadow: none; }
 
-.home-banner {
+.home-banner,
+.home-banner-2 {
   display: flex;
   align-items: center;
   min-height: 742px;
@@ -691,20 +697,22 @@ h6 {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding-top: 160px;
-  margin-bottom: 75px; }
+  padding-top: 160px; }
   @media only screen and (max-width: 1023px) {
-    .home-banner {
+    .home-banner,
+    .home-banner-2 {
       padding-top: 210px;
       padding-bottom: 20px;
       margin-bottom: 40px; } }
   @media only screen and (max-width: 767px) {
-    .home-banner {
+    .home-banner,
+    .home-banner-2 {
       padding-top: 90px;
       min-height: 375px;
       padding-bottom: 10px;
       margin-bottom: 30px; } }
-  .home-banner:after {
+  .home-banner:after,
+  .home-banner-2:after {
     content: '';
     position: absolute;
     top: 0;
@@ -712,11 +720,16 @@ h6 {
     left: 0;
     bottom: 0;
     background: rgba(255, 255, 255, 0.45); }
-  .home-banner .slick-list {
+  .home-banner .slick-list,
+  .home-banner-2 .slick-list {
     margin-bottom: 120px; }
     @media only screen and (max-width: 1023px) {
-      .home-banner .slick-list {
+      .home-banner .slick-list,
+      .home-banner-2 .slick-list {
         margin-bottom: 50px; } }
+
+.home-banner-2 {
+  background-image: url("../images/banner-home-2.png"); }
 
 .banner-content {
   max-width: 705px; }
@@ -751,7 +764,9 @@ h6 {
 
 .slick-dots {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  position: relative;
+  top: -50px; }
   .slick-dots .slick-active button {
     background: #565353; }
   .slick-dots li {
@@ -2329,7 +2344,8 @@ h6 {
       line-height: 9px; } }
 
 .z-index-20 {
-  z-index: 20; }
+  z-index: 20;
+  position: relative; }
 
 .z-index-50 {
   z-index: 50; }

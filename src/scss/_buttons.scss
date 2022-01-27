@@ -1,6 +1,10 @@
 @import "variables";
 @import "mixin";
 
+.dropdown {
+  display: flex;
+}
+
 .btn-secondary {
   font-size: $font-size-base;
   line-height: $line-height-base;
@@ -19,6 +23,10 @@
     color: $black;
     background-color: $transparent;
     border: none;
+
+    &:before {
+      filter: contrast(220%);
+    }
 
     @include breakpoint($mobile) {
       color: $emperor;
@@ -43,8 +51,8 @@
     width: 10px;
     height: 10px;
     top: 50%;
-    transform: translate(0, -50%);
-    right: 0;
+    right: 50%;
+    transform: translate(-50%, -50%);
     background-image: url("../images/arrow-down.svg");
     background-repeat: no-repeat;
   }
